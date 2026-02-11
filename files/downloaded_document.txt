@@ -1,3 +1,0 @@
-This is a confidential document that needs to be encrypted.
-It contains sensitive information that must be protected.
-Using dynamic AES encryption with blockchain key management.
