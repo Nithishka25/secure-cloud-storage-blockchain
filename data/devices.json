@@ -1,0 +1,43 @@
+{
+  "alice_test": [
+    "test_device_1770474533",
+    "test_device_1770474688",
+    "test_device_1770474854"
+  ],
+  "alice_e2e": [
+    "alice_device_1770477035",
+    "alice_device_1770477142",
+    "alice_device_1770477252",
+    "alice_device_1770477435",
+    "alice_device_1770477563",
+    "alice_device_1770478732",
+    "alice_device_1770478773",
+    "alice_device_1770478834",
+    "alice_device_1770478876",
+    "alice_device_1770478961",
+    "alice_device_1770479118",
+    "alice_device_1770479232",
+    "alice_device_1770479320",
+    "alice_device_1770483338",
+    "alice_device_1770483485",
+    "alice_device_1770484396"
+  ],
+  "bob_e2e": [
+    "bob_device_1770477035",
+    "bob_device_1770477142",
+    "bob_device_1770477252",
+    "bob_device_1770477435",
+    "bob_device_1770477563",
+    "bob_device_1770478732",
+    "bob_device_1770478773",
+    "bob_device_1770478834",
+    "bob_device_1770478876",
+    "bob_device_1770478961",
+    "bob_device_1770479118",
+    "bob_device_1770479232",
+    "bob_device_1770479320",
+    "bob_device_1770483338",
+    "bob_device_1770483485",
+    "bob_device_1770484396"
+  ]
+}
