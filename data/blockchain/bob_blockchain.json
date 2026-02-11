@@ -1,0 +1,24 @@
+{
+  "owner": "bob",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-01-30T20:40:09.165735",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "f110e31948a3430f5a2ab9c86c8e4da7d144ddba9bed7c5c81a5dc9a97bd1bbc",
+      "file_id": "genesis",
+      "owner": "bob"
+    },
+    {
+      "block_id": 1,
+      "timestamp": "2026-01-31T09:52:54.837683",
+      "data": "{\"ciphertext\": \"490d3ee5600af30b58f1c06a133643c96ec50b58ca7cb312ff2e0bddc259f5af\", \"nonce\": \"0af9e208cf622bcb8623f5761a4dcc88\", \"tag\": \"f01e3d1b97db40b71c13ab4886a869b6\", \"encrypted_key\": \"0b6924b82f5bec30c619ee41c51801ffe8cdb067b43ee2c8fef18c2e1f2cd4a0\", \"key_nonce\": \"11e3ab58cfda2d15964e00fdffe114ae\", \"key_tag\": \"4f1665a46a4a37781beb1a724a552e2c\", \"ephemeral_public_key\": \"9394a53ec6678182a82af595441599bc1c193d709f284f5832c24478b32bf661f14e064a5ccfe85fc647106e20fcc1a145106f2373292b4acf7441acd3b835c7\", \"is_shared\": true, \"shared_from\": \"alice\", \"original_file_id\": \"af83d598-bcea-469b-9f3b-1fb34038a7d1\", \"owner\": \"bob\"}",
+      "previous_hash": "f110e31948a3430f5a2ab9c86c8e4da7d144ddba9bed7c5c81a5dc9a97bd1bbc",
+      "hash": "d2d226373ddb707c768789a16d3698669dda728cb2962268e00bc850013cc991",
+      "file_id": "af83d598-bcea-469b-9f3b-1fb34038a7d1",
+      "owner": "bob"
+    }
+  ],
+  "branches": {}
+}

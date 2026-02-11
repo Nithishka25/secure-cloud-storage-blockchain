@@ -1,0 +1,69 @@
+{
+  "owner": "alice",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-01-30T20:40:09.070846",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "8e38994f31f39ba233977baf990a074a3a9f82a6e4c2dc6a23c317d4082ae929",
+      "file_id": "genesis",
+      "owner": "alice"
+    },
+    {
+      "block_id": 1,
+      "timestamp": "2026-01-30T20:40:09.100996",
+      "data": "{\"ciphertext\": \"06779c63337a4831f0499e7c785355008786635c49cd9d76f708ca1dfa82a8a2\", \"nonce\": \"d193231358c1c4033014d2c6d796a6cd\", \"tag\": \"3729b6a064622a9fa8851cac1ec8a215\", \"encrypted_key\": \"54fae8e1a13aabdbf51f54bfd0e1a549ed9646c0a2c1c028c8cfe80cb777a755\", \"key_nonce\": \"cb361e2340985f75fa1a8fb9333ab8b6\", \"key_tag\": \"9c56660475bd88e91fe31292f2d3e0d6\", \"ephemeral_public_key\": \"5f3b46758789c75b4eb05398fcb5e10af6d05a1d291f94cf2013ad922b2720477fcf42f378361c9f630ebaea68c18efb42450021f1f3b7d0923299977f763c27\"}",
+      "previous_hash": "8e38994f31f39ba233977baf990a074a3a9f82a6e4c2dc6a23c317d4082ae929",
+      "hash": "ef255332c38e374bcf0f2e596fbf400e0c90ce7f241979c0e26afd1c32271e4d",
+      "file_id": "1ceeacb2-0017-4bbf-8212-5db95dfdd970",
+      "owner": "alice"
+    },
+    {
+      "block_id": 2,
+      "timestamp": "2026-01-30T20:40:09.127802",
+      "data": "{\"ciphertext\": \"70f31eb806c86319b2a9e9be98b67a25af206410110281a9f9b5c5de9eed5331\", \"nonce\": \"3953cc64b9e9de63adbf8260c1e3e78b\", \"tag\": \"70dcc26fb311fa4e964543b8b4ff5277\", \"encrypted_key\": \"a49154e6303b800fd2dbb2f75649f86c92412053817f89564d05c8f9ad1dd167\", \"key_nonce\": \"6930266d9a0845411348b51126ce260d\", \"key_tag\": \"09e8da6aaa5e7cd2e921555c6409169f\", \"ephemeral_public_key\": \"423613891b512a278c1253e9ceb84503a5765cfdfc5ff537844f542692602f29ce7f8d0a1d467427a865516be8eb9e6a0a703c7671fc8ade35b008205aa59055\"}",
+      "previous_hash": "ef255332c38e374bcf0f2e596fbf400e0c90ce7f241979c0e26afd1c32271e4d",
+      "hash": "fe70243e535e4e6c1a58f43e09c470250006e582f5f683a5f6c4f496e7f0bfa6",
+      "file_id": "f3a6b6cc-4774-4e07-9f9e-ebd04c314027",
+      "owner": "alice"
+    },
+    {
+      "block_id": 3,
+      "timestamp": "2026-01-30T20:40:09.143196",
+      "data": "{\"ciphertext\": \"39577bea2fb13af1d8f978bc0a05bfcc8840723b930483a4fc41a00dd8fa552a\", \"nonce\": \"97222cb08f9cd18a29fd18273f323de3\", \"tag\": \"743e982c9896b7079d94899f1cd349e5\", \"encrypted_key\": \"eef2c28012217e32c29548aca78e775a6935826e3c292c758033efe802b77059\", \"key_nonce\": \"43114622088bbe8139f18247fc2b2f11\", \"key_tag\": \"99d196c8529c7814c97c6630388b35b8\", \"ephemeral_public_key\": \"f28f041aefb9c5f46faf0d1d30f34996d9d5ae10461c3c5dd653d679087cf6da854a4b6bd0e1b19be02bccc50fc161524415e8151ec6a6cd4e477f64273ca91e\"}",
+      "previous_hash": "fe70243e535e4e6c1a58f43e09c470250006e582f5f683a5f6c4f496e7f0bfa6",
+      "hash": "ba92d23df6f30d40ec3da913adf799a65422a4dd39b01e34e16172d36a4ceb95",
+      "file_id": "c0b8fc50-9128-4773-b109-126ece53805a",
+      "owner": "alice"
+    },
+    {
+      "block_id": 4,
+      "timestamp": "2026-01-30T20:40:09.156720",
+      "data": "{\"ciphertext\": \"731dc4e82e32d407e50073353c118d93d1c51f6d458007100a1d735539468a62\", \"nonce\": \"469b1e0f768c0cd940d104e7e446fdc8\", \"tag\": \"304a0abb3bfcd977a4a8621235cbda8f\", \"encrypted_key\": \"31288e122586cc8b0a81318ae1dc3edbe0b967e44990c26587048e56db2ac7b3\", \"key_nonce\": \"12d850e091e727012cfec70657e1c7d2\", \"key_tag\": \"7373058ba133e356e88217c15c3e81f2\", \"ephemeral_public_key\": \"f4779c7950fefd68b90cecd31aedfa767d0278c76ead408ee4855ccf68af370d8bbe9facc31bc5eb8f2f47d7cdfa114abb8a4d03fd6121ad6b441e8a105ecd1b\"}",
+      "previous_hash": "ba92d23df6f30d40ec3da913adf799a65422a4dd39b01e34e16172d36a4ceb95",
+      "hash": "67f202a4aa3773d84f5282758c98af803c01fdf94392b8b48a5ea26b5b94a761",
+      "file_id": "c8e58904-8910-45d3-ad5c-1696459bb68d",
+      "owner": "alice"
+    },
+    {
+      "block_id": 5,
+      "timestamp": "2026-01-31T09:52:54.810846",
+      "data": "{\"ciphertext\": \"350cd3132857982d21aec547574ab49784400ee06de4727e520d849c7ca96df4\", \"nonce\": \"8db5f835560125dc406d935bbd04178d\", \"tag\": \"b0b11e510243a10aba96977ee4c63b7d\", \"encrypted_key\": \"5a61d9b6fa0610593ed4694aa84513a340de26f4d8505f36bcc33757d080e02c\", \"key_nonce\": \"106475c65a7da1915b737c921b12fad7\", \"key_tag\": \"bcd7478913ab2d06db1e00e5ea2ba46b\", \"ephemeral_public_key\": \"471126b21ff9624b8d94c9785a2d9b8a138f81fb25dcc2505ceb29e673c0ce456e8bcf38257d0609ba9d1da71c9883514dd96620a89b20f0e6790ec76929a9de\", \"is_shared\": false, \"owner\": \"alice\"}",
+      "previous_hash": "67f202a4aa3773d84f5282758c98af803c01fdf94392b8b48a5ea26b5b94a761",
+      "hash": "9ba0f5c53658e2c4ac7a66f1c0c133748fb1427a50dca7d12191178079ab45a0",
+      "file_id": "af83d598-bcea-469b-9f3b-1fb34038a7d1",
+      "owner": "alice"
+    },
+    {
+      "block_id": 6,
+      "timestamp": "2026-01-31T10:30:50.785406",
+      "data": "{\"ciphertext\": \"459ff9783536e1376c1c4cb350b9009f7fdcf1467229fdf97d39480a3c573153\", \"nonce\": \"3ea5361121e3664d879091d868585e8d\", \"tag\": \"af55f1fca14750ee730e01c250b02e3c\", \"encrypted_key\": \"7675eec5d75e650ebff17bc2db3d62072b00a24d86feda4388b6c25bc1b45e03\", \"key_nonce\": \"5f961d33b6f10b4d7382fe66baeb37ef\", \"key_tag\": \"71ee778c9f38449a7c3397837455fa16\", \"ephemeral_public_key\": \"ed987956599ac8130b3e1a6db2b17c8a23ec71629fe56f16746e920be60b925112d5c9c649eae994deea1c1c83da53b068ebdc6aca8f2da813a221605d36252c\", \"is_shared\": false, \"owner\": \"alice\"}",
+      "previous_hash": "9ba0f5c53658e2c4ac7a66f1c0c133748fb1427a50dca7d12191178079ab45a0",
+      "hash": "bbdae7f5135bc1236a567c7372c11ccf7a1c65624ffd50007f152b12f9c3cab2",
+      "file_id": "1138e5a7-4bd2-4bcc-88df-8ea2719c8539",
+      "owner": "alice"
+    }
+  ],
+  "branches": {}
+}

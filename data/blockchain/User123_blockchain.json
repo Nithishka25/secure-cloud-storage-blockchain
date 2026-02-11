@@ -1,0 +1,33 @@
+{
+  "owner": "User123",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-02-03T20:45:05.578347",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "e512db7ad50cdaa14ae6ed1e6b436a92b7f38fae9c2b261cd3f9c8d35cdeb419",
+      "file_id": "genesis",
+      "owner": "User123"
+    },
+    {
+      "block_id": 1,
+      "timestamp": "2026-02-03T21:40:45.204577",
+      "data": "{\"ciphertext\": \"c4571770594f2e36782a20d06880793cd6e7316c3d77b232f214a6e565c3cc49\", \"nonce\": \"f8e7a701ebf2467865d4ce04164341f0\", \"tag\": \"e9a7f6202a48bfb9beda4021142507c6\", \"encrypted_key\": \"beede656c271627e4013e332c7f4c9042cb92be35a4ee69db978995fcd4f1b6b\", \"key_nonce\": \"edfdcedac8ad386215b6ff5a9c9d2079\", \"key_tag\": \"6dc9c92502021f650ae518807e64072b\", \"ephemeral_public_key\": \"606979eb0e80bcc5806b12169adb39a42ba4c16421021d4fc50ebf6a32e7fc1ba80978581b3590f01582d328cb189b88fc60f8f9e0d8d5c4a6d9d7c47732cd22\", \"is_shared\": true, \"shared_from\": \"132\", \"original_file_id\": \"35291f97-8df5-40d4-94d3-5691a3ebbfec\", \"owner\": \"User123\"}",
+      "previous_hash": "e512db7ad50cdaa14ae6ed1e6b436a92b7f38fae9c2b261cd3f9c8d35cdeb419",
+      "hash": "535d76ed80f752071ebc8c578a4d0e0e5d7ec68400cf19d4ddc1d0b452f967bc",
+      "file_id": "35291f97-8df5-40d4-94d3-5691a3ebbfec",
+      "owner": "User123"
+    },
+    {
+      "block_id": 2,
+      "timestamp": "2026-02-03T22:21:16.220273",
+      "data": "{\"ciphertext\": \"27c61cfa4f56963b9f4b818b2b074bfbb083bd656b0c43188a9e316253f12fde\", \"nonce\": \"2ce35b5fef1c6b5a7de5bd2a3e6df581\", \"tag\": \"ef976bdca9944b0a35e197860118fac6\", \"encrypted_key\": \"50b196864170f5a011d57568c143765675e52c0073937f8ab4926fead274cf38\", \"key_nonce\": \"7b229f1fa34d591445e639132c8e067d\", \"key_tag\": \"ae144f764d924165103841c54e2881ba\", \"ephemeral_public_key\": \"1ca59e80b7cdb3e2c7deb68e70f60c5835919d143f263a11a042fcdfdb98dc8740e7ca241f5fa84957c8272e2931438fd36a51e035b243d0af7e1f84e025e414\", \"is_shared\": false, \"owner\": \"User123\"}",
+      "previous_hash": "535d76ed80f752071ebc8c578a4d0e0e5d7ec68400cf19d4ddc1d0b452f967bc",
+      "hash": "eda673771bf0d005a7b307feb178eca301a7aa608781692da03051f3e8066e8b",
+      "file_id": "ce36232e-7988-42ae-ac8e-7aef73420f45",
+      "owner": "User123"
+    }
+  ],
+  "branches": {}
+}

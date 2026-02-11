@@ -1,0 +1,15 @@
+{
+  "owner": "alice_test",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-02-07T19:58:53.021366",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "e7fed6756e42f45a71421d4a0b90403d0aece41c14cbf3b4c191fb17ba469303",
+      "file_id": "genesis",
+      "owner": "alice_test"
+    }
+  ],
+  "branches": {}
+}

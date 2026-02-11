@@ -1,0 +1,60 @@
+{
+  "owner": "nithi",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-01-31T20:47:09.580613",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "b2938bc2b916cd8caaa72e0fd1b56fb3682add75c680771c2f69a9e0a9fe02f6",
+      "file_id": "genesis",
+      "owner": "nithi"
+    },
+    {
+      "block_id": 1,
+      "timestamp": "2026-02-02T08:00:11.303451",
+      "data": "{\"ciphertext\": \"d00d6f877f3234773513bce1498d59ade400ffb66ee2b645828e86dae78e7956\", \"nonce\": \"6e2a98a39af4a49acc4942edbc489bf7\", \"tag\": \"aff5f4a34a54271fc264674a7dc58ffb\", \"encrypted_key\": \"fbd946d14915f6078441cb12dc7be8236a194559b6847c4987594e3087349e56\", \"key_nonce\": \"3020290a6d0cdfc380406b347b333751\", \"key_tag\": \"b6ffbe529792048ba1825c85c43306d3\", \"ephemeral_public_key\": \"172bd45162a67415cc2c13147d1d2a2fd9e1fb15f870c5fd2f6364705e786dd995281b978e5a516feb6545a66c0fc660d02cb39ba0517b16eca8ec1f1486f9e9\", \"is_shared\": false, \"owner\": \"nithi\"}",
+      "previous_hash": "b2938bc2b916cd8caaa72e0fd1b56fb3682add75c680771c2f69a9e0a9fe02f6",
+      "hash": "f7600afc6678277472a9821d2b33696cdad30d1ca55e50deb98dc176f44b7db9",
+      "file_id": "fae4fd6e-2207-41bd-a612-cd650b1a2107",
+      "owner": "nithi"
+    },
+    {
+      "block_id": 2,
+      "timestamp": "2026-02-02T08:06:01.376020",
+      "data": "{\"ciphertext\": \"b774d917516a0550c2d24a7b865e1c1c5138eb749b5c22cb74ea69eb3f7aca14\", \"nonce\": \"1391e593ecbddc6afda7027a38c1c88b\", \"tag\": \"2a811608f7531410ffa5641ed387d234\", \"encrypted_key\": \"af6945806929ffb587002bf3df4b03dea73e5a186fde5cfc97706ff26e0ad551\", \"key_nonce\": \"61e9d64e299bc4f450684ca1e3dee833\", \"key_tag\": \"90f848cda0d1e7eaa0aa696243ff7a71\", \"ephemeral_public_key\": \"4531af28c233de84408bc92e8ba370675f02db5aae0728070ecc29d961ac817f935a69c7565b3b9298072ed6558eb651f6559268ac96eb001a694369f45f3e29\", \"is_shared\": false, \"owner\": \"nithi\"}",
+      "previous_hash": "f7600afc6678277472a9821d2b33696cdad30d1ca55e50deb98dc176f44b7db9",
+      "hash": "b31c201681817f9d27ce0288f1518a5acd411243aa932e71733ca86a537db78b",
+      "file_id": "414ceae7-8de1-4e3b-a79f-316b2f3914aa",
+      "owner": "nithi"
+    },
+    {
+      "block_id": 3,
+      "timestamp": "2026-02-04T11:11:12.954893",
+      "data": "{\"ciphertext\": \"77e0139c07bc22152d2f078eadfb6909bcc12006f56c9eb9a48cf44029ba8ec5\", \"nonce\": \"99ec822fdc402b0e0c152dd4f886519b\", \"tag\": \"b08c4e1049d90afde0d6e7897cb96646\", \"encrypted_key\": \"743e3dd45b18d34fe6464646901613d2c67a7465edb5ca9e0053a5d26c0d6971\", \"key_nonce\": \"6fc3c3a57cbd2e5f8de062020a84e489\", \"key_tag\": \"75c33813c3a3434fefb8fafcdb1d4cb5\", \"ephemeral_public_key\": \"aadc064b80469afc326ba2a8a4949a92829a9e976017c69b6433f5f1695d27202b5d2ec5dbc7eaf8a7baaf0d8b41a263b39be55e7d2ba02e954bc1bc6156e80e\", \"is_shared\": true, \"shared_from\": \"nathi\", \"original_file_id\": \"9269ea89-839e-4c20-9352-7bdb7dbd9890\", \"owner\": \"Nithi\"}",
+      "previous_hash": "b31c201681817f9d27ce0288f1518a5acd411243aa932e71733ca86a537db78b",
+      "hash": "28a0ad40ad3c391adafe1986fab891bd2e4ae1fa149dacf8c8f31b8d27700c8b",
+      "file_id": "9269ea89-839e-4c20-9352-7bdb7dbd9890",
+      "owner": "nithi"
+    },
+    {
+      "block_id": 4,
+      "timestamp": "2026-02-04T14:24:52.020094",
+      "data": "{\"ciphertext\": \"b7c7a41fee0553755b67f61fdd902eb98b4fa0a25f6ea52c55e748025ab6bc4e\", \"nonce\": \"ccc64e229f7dfb765b3bd8f70e4558d4\", \"tag\": \"2ee036f8341d30168bbd568b6549cbc8\", \"encrypted_key\": \"1d328a48f48aa7992531296c94d4f8ac326928316cabb3333e7e8b6858c71031\", \"key_nonce\": \"2d00ccdc0377cd3fcb9c30120e76c96f\", \"key_tag\": \"c6081705a6dd3bd3be5c926ad8c9a314\", \"ephemeral_public_key\": \"e33b5d09b7cedca41412f1e4770f7de6d47e0125f0343f1541e3beccbfc0bca13558edf41a04f80aa34a839168c01639c3c36bea7d603025c767c4a5ebb18945\", \"is_shared\": false, \"owner\": \"Nithi\"}",
+      "previous_hash": "28a0ad40ad3c391adafe1986fab891bd2e4ae1fa149dacf8c8f31b8d27700c8b",
+      "hash": "9ab47f5fa1ff17ad57980e48639557487f29650dd9e94caf39fbc35587bc6c42",
+      "file_id": "cf9b0d62-b867-4875-843c-695d77c0ff48",
+      "owner": "nithi"
+    },
+    {
+      "block_id": 5,
+      "timestamp": "2026-02-04T14:25:00.753251",
+      "data": "{\"ciphertext\": \"caaeda1164bb0b931ce0cab318a34aabb50018c4ddeccceaf5d67d2527140138\", \"nonce\": \"c58b88c952e875a29e485df12642142f\", \"tag\": \"99813bc4a09de23033ddc42268e94589\", \"encrypted_key\": \"330083bbcc5ae52d0aabcb270d9616a68ee57e2aba01bf68ac793642d85a04c5\", \"key_nonce\": \"d14c8c3240080606b325ce3815582f28\", \"key_tag\": \"b50bc238d63075f889bfe06db62cc2a3\", \"ephemeral_public_key\": \"5c1ac9d8f39f56da9611ff9f717d260ad14167f9e07ffed7a3b3f9a8ac790c9090b6c5ec765391072ab1593198dd618b49440a5d8d58022e2ca3280867b8c5b1\", \"is_shared\": true, \"shared_from\": \"nathi\", \"original_file_id\": \"69bef57c-6dc3-4939-b88b-45d75d9a4901\", \"owner\": \"Nithi\"}",
+      "previous_hash": "9ab47f5fa1ff17ad57980e48639557487f29650dd9e94caf39fbc35587bc6c42",
+      "hash": "88862b8d780a0a565062a32b0883c76e39c66d8b293c551eddf6bf6c8bf37bb3",
+      "file_id": "69bef57c-6dc3-4939-b88b-45d75d9a4901",
+      "owner": "nithi"
+    }
+  ],
+  "branches": {}
+}

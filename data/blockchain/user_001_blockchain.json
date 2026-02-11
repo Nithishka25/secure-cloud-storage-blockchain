@@ -1,0 +1,54 @@
+{
+  "owner": "user_001",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-02-03T11:25:50.359626",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "34378c20d4300fb9b0c2346d6546c8dd1cc7eaac56b4ad19e4e3622780ce6fc5",
+      "file_id": "genesis",
+      "owner": "user_001"
+    },
+    {
+      "block_id": 1,
+      "timestamp": "2026-02-03T11:25:50.361994",
+      "data": "Encrypted_key_1",
+      "previous_hash": "34378c20d4300fb9b0c2346d6546c8dd1cc7eaac56b4ad19e4e3622780ce6fc5",
+      "hash": "d84bfa21114e3cda822f4d02045bd81b718d95084532be5e33d099ad46ff9ac3",
+      "file_id": "file_1.txt",
+      "owner": "user_001"
+    },
+    {
+      "block_id": 2,
+      "timestamp": "2026-02-03T11:25:50.361994",
+      "data": "Encrypted_key_2",
+      "previous_hash": "d84bfa21114e3cda822f4d02045bd81b718d95084532be5e33d099ad46ff9ac3",
+      "hash": "eb6053695c523fab5f1788084d22f73acb44dc15f555c433e7649b3244e6ba1b",
+      "file_id": "file_2.txt",
+      "owner": "user_001"
+    },
+    {
+      "block_id": 3,
+      "timestamp": "2026-02-03T11:25:50.363422",
+      "data": "Encrypted_key_3",
+      "previous_hash": "eb6053695c523fab5f1788084d22f73acb44dc15f555c433e7649b3244e6ba1b",
+      "hash": "a351520b6f2863b232a3ec76d6472839e1f9805f5d274af49e53f8c90d815daf",
+      "file_id": "file_3.txt",
+      "owner": "user_001"
+    }
+  ],
+  "branches": {
+    "shared_with_user_002": [
+      {
+        "block_id": "2.1",
+        "timestamp": "2026-02-03T11:25:50.382662",
+        "data": "Encrypted_shared_key_1",
+        "previous_hash": "eb6053695c523fab5f1788084d22f73acb44dc15f555c433e7649b3244e6ba1b",
+        "hash": "1bf00a104370ef44f7d7d330516262d217dd024a65daa507b67d7d17cd51e08a",
+        "file_id": "shared_file_1.pdf",
+        "owner": "user_001"
+      }
+    ]
+  }
+}

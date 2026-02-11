@@ -1,0 +1,123 @@
+{
+  "owner": "132",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-01-31T14:57:32.115661",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "99f87a1946147ae2bf056b19c4c9b09750008ad6fca53527c7d4503b912baa42",
+      "file_id": "genesis",
+      "owner": "132"
+    },
+    {
+      "block_id": 1,
+      "timestamp": "2026-01-31T14:58:01.382100",
+      "data": "{\"ciphertext\": \"f5bec697ccf7c694dde55bd69ecc09c21c4262526ac79d442ff0d93236dac893\", \"nonce\": \"015a249e5cacc3e9497336cfa21f3bbf\", \"tag\": \"159e9f5cb45ba5cae600c67a38095c1d\", \"encrypted_key\": \"c281db97b60e17382aef18fcfbf5cdedc6bd6a89acc4795b85fbd22211cc43a5\", \"key_nonce\": \"a8db341d6c1d522f0b76cfcdf455e762\", \"key_tag\": \"05637706e14e7bd615d3ed47c69df49e\", \"ephemeral_public_key\": \"dd21f31ead1fed3aec17723ffa945d2060ad26d0c4ca6c93ac241eb503944b6d16f0b55c8a9b7c5349a7e7aacc157090786257d58bc8515aa113bd328b848292\", \"is_shared\": false, \"owner\": \"132\"}",
+      "previous_hash": "99f87a1946147ae2bf056b19c4c9b09750008ad6fca53527c7d4503b912baa42",
+      "hash": "7d585cd4d9661634f6237063927da42968fbe2fae9d0baa033b8204244053803",
+      "file_id": "35291f97-8df5-40d4-94d3-5691a3ebbfec",
+      "owner": "132"
+    },
+    {
+      "block_id": 2,
+      "timestamp": "2026-01-31T15:26:56.732705",
+      "data": "{\"ciphertext\": \"2ddd30f9b11624d4e30609dda58ffbfb206814d0789106648a8e0763ab24175c\", \"nonce\": \"e41e400e1ed23eedd0939d2aea338f99\", \"tag\": \"7f83a20890e9d8b6bc59d8c683abe7e2\", \"encrypted_key\": \"716367afaee773ea930056e3b861f63c1e17b9689b080d012cc91154ac8deb2b\", \"key_nonce\": \"39a4c47086e62558631b67fca6dfc9e9\", \"key_tag\": \"1c997c4215c45491bed44c97199f6081\", \"ephemeral_public_key\": \"0d82fbc687eda3f4a38e6a38c4812443dd5cfae5bd27bf90b35f3bf8c38dae704e4cb9bdf9ed98ba3f696785a46a2b0b0122789b5932d9b893caaa9e99d99f50\", \"is_shared\": true, \"shared_from\": \"demo_user\", \"original_file_id\": \"848e94ce-c8be-4c57-8057-75ce73d5979f\", \"owner\": \"132\"}",
+      "previous_hash": "7d585cd4d9661634f6237063927da42968fbe2fae9d0baa033b8204244053803",
+      "hash": "b1008fb8268ee2cc0cc4b9ec28fcc25a063559944c9236a197033d76bc0c627b",
+      "file_id": "848e94ce-c8be-4c57-8057-75ce73d5979f",
+      "owner": "132"
+    },
+    {
+      "block_id": 3,
+      "timestamp": "2026-01-31T20:55:09.532591",
+      "data": "{\"ciphertext\": \"66ae813e96e409fd8aa846ee02a7e7e8237170db0be727e91f9e2accc62e2941\", \"nonce\": \"5a7c4f6d871e48ecbc115e04ad1faf82\", \"tag\": \"6e29a8b3d619239daafc79d5d25ab22b\", \"encrypted_key\": \"807ea47aa6fb739cae8eb2d45d7db4d33e8d77be0cc0f524afdca0f70155272a\", \"key_nonce\": \"2aef1b2d3a14d2bd0d7a8729c45da044\", \"key_tag\": \"39fa1fd39613759038224e99d8522814\", \"ephemeral_public_key\": \"d236a6f74eb043ffe4cf206363a8a09b02cbea6bfd4ca4aada1abce8d0c63b074f73feb413f90ff183ec41a0f5c1ba8d03f000c3fe134f00e67212423aa0c156\", \"is_shared\": false, \"owner\": \"132\"}",
+      "previous_hash": "b1008fb8268ee2cc0cc4b9ec28fcc25a063559944c9236a197033d76bc0c627b",
+      "hash": "183108713039ae845098a4e62cc4b2a9d36b5720622178e29c0ebb2dedd1b477",
+      "file_id": "8d6e1c3e-291d-470d-91c0-a93e3891aa37",
+      "owner": "132"
+    },
+    {
+      "block_id": 4,
+      "timestamp": "2026-02-03T20:38:25.965900",
+      "data": "{\"ciphertext\": \"685a8a6aeae8a924e493207d2480ac3162cae09f6cf2d5bba5247f81b3b20562\", \"nonce\": \"037ef65c405071e1fd966556a6693d52\", \"tag\": \"0c249e184ce1a8667848296bd0ba81db\", \"encrypted_key\": \"445bcd44f07910d698340bca181c5ca4784c82f809c75b7e535660b7f1c8ee59\", \"key_nonce\": \"18e056dd1d75dc95fce4009c02365851\", \"key_tag\": \"fe4f8a369ff2321eab5acbed0cd0b445\", \"ephemeral_public_key\": \"d6da89bb92134217cbf1b0e80d6fe5db4ce577fdc42065081c0ab950156347757eff3faed904517bcaa4c25fa63306fbe40332671a364b99521a38b003892090\", \"is_shared\": false, \"owner\": \"132\"}",
+      "previous_hash": "183108713039ae845098a4e62cc4b2a9d36b5720622178e29c0ebb2dedd1b477",
+      "hash": "d340faed41f30ee3257770b2e2c6e459f51b705dc746e6f981303183bb714eeb",
+      "file_id": "65ec4db4-b8b6-4ae9-8463-d30c277d78a4",
+      "owner": "132"
+    },
+    {
+      "block_id": 5,
+      "timestamp": "2026-02-03T22:23:29.652988",
+      "data": "{\"ciphertext\": \"36522fddda2daa7ffdea8a1c9748001a21c39689553b93b479364638da28d423\", \"nonce\": \"f089ff965dc31cedcf198b6a7d1b7ff0\", \"tag\": \"1c081816eb81a5cb9cb5e9aeca0dc789\", \"encrypted_key\": \"96c4e2193733bb71e604427dba7a55c1ca7c5873d2dab26f2da00c9760e6af84\", \"key_nonce\": \"2226ac86588628130ecc44b287d1ea58\", \"key_tag\": \"27adcbc4360b47d65ac3d8bee098d088\", \"ephemeral_public_key\": \"21e9907e632b93a426617fa27408e5040af83a1ed13eb9e5c79c30371701e5e5b222e8d0c538622f5daa34ee4d12fc8de12b14c16a2dd978e43105396719cc15\", \"is_shared\": true, \"shared_from\": \"User123\", \"original_file_id\": \"ce36232e-7988-42ae-ac8e-7aef73420f45\", \"owner\": \"132\"}",
+      "previous_hash": "d340faed41f30ee3257770b2e2c6e459f51b705dc746e6f981303183bb714eeb",
+      "hash": "61ea65b711a173d9c8c4f52c1fe3d025dcca06f18c584592ce73054f0b8b8ca5",
+      "file_id": "ce36232e-7988-42ae-ac8e-7aef73420f45",
+      "owner": "132"
+    },
+    {
+      "block_id": 6,
+      "timestamp": "2026-02-04T10:05:39.339060",
+      "data": "{\"ciphertext\": \"afb1e29c0b29bcb7c1d8fbff221a35c0bef252aa1c7ddc6e278c30a279e72358\", \"nonce\": \"647b065fc5d207876352bddf30af70a6\", \"tag\": \"cdf86fed66592cf962aef78ab3fb6bae\", \"encrypted_key\": \"64c64dfc39997d6dc03fe242621d9b7688ce695172ace4b1e0384054012d2bef\", \"key_nonce\": \"035cfd775ee8eb70abb26bd6388ee5f1\", \"key_tag\": \"76c0cbee2bcea7fcc969208bb4ce4b08\", \"ephemeral_public_key\": \"fd55479588bc6a72a7bfaddf3a8d227e60f51105cb7d048475533a67d10935ce03528d19bdfcec8a8645401652af843dea62e83c330b6e15db0034120c63fa2a\", \"is_shared\": true, \"shared_from\": \"dhanu\", \"original_file_id\": \"d63c92e6-fcd0-484c-b6b3-68a0700f0d0c\", \"owner\": \"132\"}",
+      "previous_hash": "61ea65b711a173d9c8c4f52c1fe3d025dcca06f18c584592ce73054f0b8b8ca5",
+      "hash": "3eb218cf67ffc8eb7bdb046be0f6155e6b9b1760901cde10df9257b84d2c164f",
+      "file_id": "d63c92e6-fcd0-484c-b6b3-68a0700f0d0c",
+      "owner": "132"
+    },
+    {
+      "block_id": 7,
+      "timestamp": "2026-02-04T10:06:37.884028",
+      "data": "{\"ciphertext\": \"6cc0d3b77608767f20d3e421141e72989e288917a79a57847233019a311c40ce\", \"nonce\": \"511aeb0e90fa991140091e2851c6fecd\", \"tag\": \"04c67413f9296877c6665e14a831f706\", \"encrypted_key\": \"2358f383703da3a6442e91979290dca7d95ca56b5eb30af3eafb09cd8d76c477\", \"key_nonce\": \"fe9dd63a2fab6822faf695f0d436ba5c\", \"key_tag\": \"025ed85b651014a8a0eed46df5b1ef00\", \"ephemeral_public_key\": \"58b516668ce7b5d675d6e51808191a47daf939b4b0aa593ddad37ce8b5ffb56cea6706737513f7382628b239755460c41720d091ec3d243fe22a54f6f5b4d61e\", \"is_shared\": true, \"shared_from\": \"dhanu\", \"original_file_id\": \"c52d8a8e-f1cf-4d00-a359-382236b1611f\", \"owner\": \"132\"}",
+      "previous_hash": "3eb218cf67ffc8eb7bdb046be0f6155e6b9b1760901cde10df9257b84d2c164f",
+      "hash": "d0b0f380be64420126230cc74038c67e85f785280fc64da6dbbbea008798eeb0",
+      "file_id": "c52d8a8e-f1cf-4d00-a359-382236b1611f",
+      "owner": "132"
+    },
+    {
+      "block_id": 8,
+      "timestamp": "2026-02-04T10:51:18.878997",
+      "data": "{\"ciphertext\": \"7a0a61185a46f2299fd006001d21af69ff473d9ca7b2b49f010750589b01b3a4\", \"nonce\": \"6d77f44b4feee7dd7479525207e01fef\", \"tag\": \"f0e6f4eecda550c9709b923fec813775\", \"encrypted_key\": \"dcdad70e94c04a6c564ef28f55dcf0531d1b7192a76e013f32b71fdd4df48627\", \"key_nonce\": \"2c224f445be5899400d4da4993f8c2e7\", \"key_tag\": \"8860c93104aae8647f0ce4f11851ad72\", \"ephemeral_public_key\": \"43e28a070b6d834af00e0c1c4def902ba9ed91115e1b242f00f054fc2aa1e829de05f3c4c4df664fae5300837a494763ecbaf441281f1ee1f1c8826c5c93c9ed\", \"is_shared\": true, \"shared_from\": \"dhanu\", \"original_file_id\": \"2ac607fe-14be-45f8-9fd2-0f6a1eabc6cf\", \"owner\": \"132\"}",
+      "previous_hash": "d0b0f380be64420126230cc74038c67e85f785280fc64da6dbbbea008798eeb0",
+      "hash": "b3b36b23ad74fe80002a9c2bb3f8e76a7c881053e3e9ab5fd1addfaef5596089",
+      "file_id": "2ac607fe-14be-45f8-9fd2-0f6a1eabc6cf",
+      "owner": "132"
+    },
+    {
+      "block_id": 9,
+      "timestamp": "2026-02-04T10:53:08.939977",
+      "data": "{\"ciphertext\": \"12694787006597d416a9b0e5848561a8a5098883cfc910c54b74628b39a07bf8\", \"nonce\": \"b8fd86e7de4e927730d5c510c41e6dab\", \"tag\": \"98b9f7c2fc0cceb53bcc4279ab25b730\", \"encrypted_key\": \"ade55c07e3a91c752ebc93c31d058d117367a7a5e185e520e1abf5d84f3f4924\", \"key_nonce\": \"55e76b2e7d24fb035535ab56bd3a7607\", \"key_tag\": \"b89847d1334184e8dc1fc2d088e7eea3\", \"ephemeral_public_key\": \"5a85847072ee577726890020380be14becdaf0a1d9b9b0c69dfb9e28df6e43adb6428ca0da15a254975ec19b4ba3db7f259bb6e7db9f2f39348b05872b77467c\", \"is_shared\": true, \"shared_from\": \"dhanu\", \"original_file_id\": \"93fca473-3152-406b-ada8-c06089a89c26\", \"owner\": \"132\"}",
+      "previous_hash": "b3b36b23ad74fe80002a9c2bb3f8e76a7c881053e3e9ab5fd1addfaef5596089",
+      "hash": "efab6d12c51eafef22b45b75ee3663d7e0cdd1be0c6f41a3a47bfa49de0bd61e",
+      "file_id": "93fca473-3152-406b-ada8-c06089a89c26",
+      "owner": "132"
+    },
+    {
+      "block_id": 10,
+      "timestamp": "2026-02-04T10:57:54.906581",
+      "data": "{\"ciphertext\": \"0397c11da730e0a495ff7aef096385062d33fb7686e12a52bcea0755d6312f60\", \"nonce\": \"ba265b2e22104e8aba24588dc0799ca5\", \"tag\": \"ce575794c2f80d7874332cff910c1feb\", \"encrypted_key\": \"2e0fdf2a2cc73d97f069dd13b71d74bd9875bd8c8f9a7edd2f3167233b3a5f8e\", \"key_nonce\": \"a96fdd7841030b821ba5cc4bc63cd390\", \"key_tag\": \"2f52c83863f7f7b0c3341d5787d48eae\", \"ephemeral_public_key\": \"b96c7e7e8dca8010c1e223cc740ee7ff13f3163fe4a7b2be935d11b187eeb7605066accbbe7f0cfa25716cd110f98e0cc37aea392eb514a6bf5e5a525365eb64\", \"is_shared\": true, \"shared_from\": \"dhanu\", \"original_file_id\": \"0d4a4976-1de2-4593-b011-42f3a7e64369\", \"owner\": \"132\"}",
+      "previous_hash": "efab6d12c51eafef22b45b75ee3663d7e0cdd1be0c6f41a3a47bfa49de0bd61e",
+      "hash": "2cb2a812aa81b427f2615fa9d43087338d2f8bda3a4ae30a54062be40b3316f5",
+      "file_id": "0d4a4976-1de2-4593-b011-42f3a7e64369",
+      "owner": "132"
+    },
+    {
+      "block_id": 11,
+      "timestamp": "2026-02-04T11:01:02.830816",
+      "data": "{\"ciphertext\": \"cbb9973e95dee8b5b96eb3d5fe9556a73059775f3d2e59bc728a2008207b88ba\", \"nonce\": \"00c75ec179b54e636943fea0fc1da1ca\", \"tag\": \"470a8948421962e9758726d20d3ea7db\", \"encrypted_key\": \"0da84b6b7f16436a73b0c4a484c92d32a067ccf0c3f9bf94f90d2a70ef460839\", \"key_nonce\": \"10918b53cc3483df39fa69eeeb18a546\", \"key_tag\": \"964d32a6df89ca5d322ade8912d79205\", \"ephemeral_public_key\": \"001f7485ca836fd2fe5acc0e3e34a7e421f11a98f3ce0b174c677c5c198a4c41e4dacdbc55e94a8b81e931ed37ec5a908765cc21956a166e5fdb51537460c3fd\", \"is_shared\": false, \"owner\": \"132\"}",
+      "previous_hash": "2cb2a812aa81b427f2615fa9d43087338d2f8bda3a4ae30a54062be40b3316f5",
+      "hash": "c7e43752699fe0a64dc3bf9caa280cff4bba9225208231c6efae64a23faa1ee8",
+      "file_id": "6a52c302-cb6c-4d40-9be4-b2f687fd6838",
+      "owner": "132"
+    },
+    {
+      "block_id": 12,
+      "timestamp": "2026-02-04T11:05:50.795623",
+      "data": "{\"ciphertext\": \"0fcfb13a242cc2821c1efa8764ff044322f3fdf734b7f580d93abf8c61cf1d0c\", \"nonce\": \"46a45ca1eb8df12caf54dbd96de9a50a\", \"tag\": \"6be2f4274bb26d81a21b5b505cf0d1cc\", \"encrypted_key\": \"2988a7f024f581533337c822e6c6419f4e343152d3f8e123a6ac9269bc35c8dd\", \"key_nonce\": \"bc9c7cb8c57150a199ea2204fa4ad69c\", \"key_tag\": \"4d85cbc41082d88214e2ac8bbaeb9d62\", \"ephemeral_public_key\": \"cce32c65a553683467053dbbb9223a8b7f24f5309a32d45ce58049fd598c4bad369e70662c91d608d2c0fb990ec69700b7e4ea24f8538bd61740e23a9080037f\", \"is_shared\": true, \"shared_from\": \"dhanu\", \"original_file_id\": \"13a78618-b216-4281-9c57-2f465abc82b1\", \"owner\": \"132\"}",
+      "previous_hash": "c7e43752699fe0a64dc3bf9caa280cff4bba9225208231c6efae64a23faa1ee8",
+      "hash": "4205803bb361196ee2636a0ff11b3aed3bc2233fecb41b65a5767c0e9b01f48d",
+      "file_id": "13a78618-b216-4281-9c57-2f465abc82b1",
+      "owner": "132"
+    }
+  ],
+  "branches": {}
+}

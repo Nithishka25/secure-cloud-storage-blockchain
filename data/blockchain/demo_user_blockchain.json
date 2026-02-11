@@ -1,0 +1,51 @@
+{
+  "owner": "demo_user",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-01-30T20:40:26.523248",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "2a7f4e3298ebadb47327663b2dae112e1f4212f0e6a11f45b1524c9a9b684cfe",
+      "file_id": "genesis",
+      "owner": "demo_user"
+    },
+    {
+      "block_id": 1,
+      "timestamp": "2026-01-30T20:42:12.886298",
+      "data": "{\"ciphertext\": \"9c9afc3c4a33b0cc019c62912966c3d785f77d647c67e72774868e34e98c870f\", \"nonce\": \"a98708d3810cd4031049322bce6bb91c\", \"tag\": \"72cb997d66a55467310af5153b234eb6\", \"encrypted_key\": \"958ffdb52ffbea64a46ba4afcf0d2f183fe637995b8cb61a09a87e03e6ceefd5\", \"key_nonce\": \"ee51c9851f4b75a3860025581817c78d\", \"key_tag\": \"eda5bec9b28e8825fda61bed36df3bbb\", \"ephemeral_public_key\": \"c5508c8d9cb5c9bb8eab5b92902b2ce014e2b07f8ab0f727fa00ac242f7f80d7a3b5bae9018e2598f08998f490098119fe2b086355b4cc136171c6b715faf4f9\"}",
+      "previous_hash": "2a7f4e3298ebadb47327663b2dae112e1f4212f0e6a11f45b1524c9a9b684cfe",
+      "hash": "eb207405fa022346950d2f187a54f33fc4c00105734c21e631a58a37113f3497",
+      "file_id": "848e94ce-c8be-4c57-8057-75ce73d5979f",
+      "owner": "demo_user"
+    },
+    {
+      "block_id": 2,
+      "timestamp": "2026-01-31T09:55:30.264446",
+      "data": "{\"ciphertext\": \"21a12586b2cbd5d11398eeff3783eff3aff2838c25c99d525555165f26adc687\", \"nonce\": \"0aa2a8689231af259a9771f943d058e5\", \"tag\": \"6909b4a915a1591cd2ab17ac7c6d23fe\", \"encrypted_key\": \"80ebe7509559d6cdaf76419ef5f5ea760e3dc3a21c2151e52e1d32ec4be12516\", \"key_nonce\": \"1f54776a88b7246172e542da30d61466\", \"key_tag\": \"74776ef29a3f9f12fe99bc6fc3fce84b\", \"ephemeral_public_key\": \"6657833367aa6fdad2e41a44e5ff11bd64db5e70a8cac2ce0ce6c096589dcd85c867d81a087cf7c57bafa52d95f9915136fe4a9258186689747896f15b8e4bf6\", \"is_shared\": true, \"shared_from\": \"123\", \"original_file_id\": \"7663eeff-f64d-42a0-b768-7e7efb62d5a9\", \"owner\": \"demo_user\"}",
+      "previous_hash": "eb207405fa022346950d2f187a54f33fc4c00105734c21e631a58a37113f3497",
+      "hash": "505d268d297513a280834766c35781c6249b242508dbc4f100d93d6171b28b3c",
+      "file_id": "7663eeff-f64d-42a0-b768-7e7efb62d5a9",
+      "owner": "demo_user"
+    },
+    {
+      "block_id": 3,
+      "timestamp": "2026-01-31T10:15:47.864182",
+      "data": "{\"ciphertext\": \"701d3d824333c13db816f3ec476deb21cba68fa4e61005f870e991e015446133\", \"nonce\": \"575ca0a810e40137d935c159c97f85d4\", \"tag\": \"5b5969a1448e42345f8d1612ac8304b5\", \"encrypted_key\": \"00abe001ac181bc3345d6ae85b8c907a0d47b0e4a09c58026d692d6914f77a1a\", \"key_nonce\": \"18991401377aaa25fb6ccb66f63ee8bc\", \"key_tag\": \"ea45631a7062f882725f207696fdbb18\", \"ephemeral_public_key\": \"fd00639b916d53411eb5eee7314c73978cd8f2f16d9c9ccaec0cbe0d24c68617828a0399bf495a5036f9b052d221a7fdbea65f54018931b09795c1aeba3222c7\", \"is_shared\": false, \"owner\": \"demo_user\"}",
+      "previous_hash": "505d268d297513a280834766c35781c6249b242508dbc4f100d93d6171b28b3c",
+      "hash": "9ec6cebe6ad6e433c95e8bd1ed48e6be511ecb0e701fa60d535b0236ff468af0",
+      "file_id": "71d22ab7-da13-49a8-be58-56c23de619f6",
+      "owner": "demo_user"
+    },
+    {
+      "block_id": 4,
+      "timestamp": "2026-02-03T21:40:36.499714",
+      "data": "{\"ciphertext\": \"81303b8c4a4a33368e7a2c815626d1c545ad61264e82701cff761d40b53d1cba\", \"nonce\": \"96091788f0c6fcbaad2b7e02f6b5ea46\", \"tag\": \"2ad4725b39b97c5f31ead5ce54e3cfd2\", \"encrypted_key\": \"afe6e588a66af64f71c784329a2e903597e2828d439d73721fabad7d6fe10f0b\", \"key_nonce\": \"dae99f5d852e7cd7d48b5e36bcf15723\", \"key_tag\": \"f3e35662e9b6dd326bb4bcf9b7e17711\", \"ephemeral_public_key\": \"95f73d28e9e2c557d6532a6285e40fdfb5da7571147f7c4c56688b89c4c3b01542811e2cb5f55b215378d1b85c9da4d686bb0588419705b5838b3571a9e2d95a\", \"is_shared\": true, \"shared_from\": \"132\", \"original_file_id\": \"35291f97-8df5-40d4-94d3-5691a3ebbfec\", \"owner\": \"demo_user\"}",
+      "previous_hash": "9ec6cebe6ad6e433c95e8bd1ed48e6be511ecb0e701fa60d535b0236ff468af0",
+      "hash": "8c36f09dcce9de67a35a41213765e1659c9a5244d6661104ad914c6197280047",
+      "file_id": "35291f97-8df5-40d4-94d3-5691a3ebbfec",
+      "owner": "demo_user"
+    }
+  ],
+  "branches": {}
+}

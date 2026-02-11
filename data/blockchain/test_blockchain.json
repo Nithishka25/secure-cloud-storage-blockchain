@@ -1,0 +1,15 @@
+{
+  "owner": "test",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-02-07T19:59:01.724346",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "78363fe38dc4ab47c3ef5d8f2246add92b042500dd5d50929b91f76783e4d4fd",
+      "file_id": "genesis",
+      "owner": "test"
+    }
+  ],
+  "branches": {}
+}

@@ -1,0 +1,150 @@
+{
+  "owner": "alice_e2e",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-02-07T20:40:33.249762",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "7fa1c3647f561db4ef3e74a83eb1309edf98cdcd8f956691bfc61a73404716d0",
+      "file_id": "genesis",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 1,
+      "timestamp": "2026-02-07T20:40:41.749458",
+      "data": "{\"ciphertext\": \"70ba25f474fccc33e4aa30699be4a2d3b8c44f432b5de61808a737e0d37355ea\", \"nonce\": \"96a9f04e66fbd22921d73c38470d5338\", \"tag\": \"08de995a9581a2797b9c9a3ddefea494\", \"encrypted_key\": \"41ad490608260dfbb8f4dd9e739c373b6edbedad290a0203a8b5044eb4ef3168\", \"key_nonce\": \"0a809b7bb4fdad24b5cbcdd3fa065c87\", \"key_tag\": \"c29d0f247582feb2d54e676a7f1fa3b5\", \"ephemeral_public_key\": \"00761004a75f077b9174614115873a8ed6a48217bc23797137381be3ad3e3c912dac757b9a40684099d4fbbf0c8d98d3c808bbecd23472782570ec20486bd63f\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "7fa1c3647f561db4ef3e74a83eb1309edf98cdcd8f956691bfc61a73404716d0",
+      "hash": "e58d09b2a326ced20ab4b39fdc984358d6ee0224ec647f9f93feeaa6a1bb9b86",
+      "file_id": "ad99623d-cc4f-48eb-a761-71724f225d4b",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 2,
+      "timestamp": "2026-02-07T20:42:29.010938",
+      "data": "{\"ciphertext\": \"3c7bfe4ae3e47cf4ca132aa92c1b60806c20807637a45467aba45cb14c09080e\", \"nonce\": \"f9659762eed608f36bee76b5d65269fa\", \"tag\": \"94d8e85fe6712b23505231f5cbcd9a5c\", \"encrypted_key\": \"2d5173f2cd8464440b781e941e266c56134a67ca81f5f3483e19862d7989d6d4\", \"key_nonce\": \"36b5040aa4a3d05f892b4b8b74acadec\", \"key_tag\": \"c180be30563b49850d2528a3b6c72f18\", \"ephemeral_public_key\": \"a392c2f48d9bbd2436786296c78ead98acaec74eebd0fec05f98f9f267164b8bed478efce42fc414a99e0adeeb77c2e8fa54c61826a317a1fd92ce64bf01e632\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "e58d09b2a326ced20ab4b39fdc984358d6ee0224ec647f9f93feeaa6a1bb9b86",
+      "hash": "ee04934bde85bb34e5c07d9f61f7d27897058f9c20e16ea8c160702024b5e41e",
+      "file_id": "967b3128-b039-41b1-a4d3-584895c3afa5",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 3,
+      "timestamp": "2026-02-07T20:44:18.445084",
+      "data": "{\"ciphertext\": \"283601435f6d3a0cf62145db4f6f65c3a88cd2cf11b918a52015cb222c28a816\", \"nonce\": \"374e8736365490b61e1a530885bec330\", \"tag\": \"bccc64db2d475db06e890cc5ec9d3317\", \"encrypted_key\": \"6729781c2ba8f62db3a41c2504194c8a312eabafefab61cbc4139b1ef833e79d\", \"key_nonce\": \"edb99e22fb2a654886f5cd9fe645d2b6\", \"key_tag\": \"b84c712bfb3319c7fbfef88f1e37115d\", \"ephemeral_public_key\": \"5a95ef843773f3bb3a1040c1cfe7cf932b4ff6d4b997eeb572c8f26db6a38680b11cf2a560d61c231e0229135b844c95c6df59b6e947070f98e706cf7aa99f93\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "ee04934bde85bb34e5c07d9f61f7d27897058f9c20e16ea8c160702024b5e41e",
+      "hash": "4c137585e05cf65d4ca8404747b39aa1acf26225113b5e01926eede4a665f5c2",
+      "file_id": "76218d8b-2087-4e9d-a30e-ecf3c927591e",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 4,
+      "timestamp": "2026-02-07T20:47:21.714480",
+      "data": "{\"ciphertext\": \"01f595a0347f89b2d25368089aade39ec5d98fd3cb2be201017f56ec9f7b5c7e\", \"nonce\": \"e6669c281b13b67fa1a3e91cca0423b4\", \"tag\": \"68755d8d89bf43d7a8f1239049827ba9\", \"encrypted_key\": \"e58e6bb86b895f168421669b431f90b54d59d12d81874b7209fc0c224cc9e943\", \"key_nonce\": \"f93f77a2a6595b820ebf3fcd89c61e24\", \"key_tag\": \"1180ac98af609bd9d5f933aefe58b6fe\", \"ephemeral_public_key\": \"6f51dcd02e1a0e464dfb2c8f3e5fe13b73dec9138b326cd997374952ba3035fbaed4ae997ff70f142a8bd077c3b66182a81fc4ed13a3dc3b43ef7e5f8af3e01b\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "4c137585e05cf65d4ca8404747b39aa1acf26225113b5e01926eede4a665f5c2",
+      "hash": "6b4a20f65ee7efcc027ab7dcee5c2368b44dec9d8c805a12ef2af02f3c94522c",
+      "file_id": "2d073d14-4a18-454c-86bd-f39e1433f1ab",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 5,
+      "timestamp": "2026-02-07T20:49:29.943683",
+      "data": "{\"ciphertext\": \"f47d1c17709a930f4f0d678422df05830ee2cec6adc028e22f3b33c116fa7657\", \"nonce\": \"3ae9885be29ed4a004328408acd6f7b6\", \"tag\": \"2f0e21a312784d6afad55a8e9304b94b\", \"encrypted_key\": \"b16ec7f2e53ed837326bcc43376ab87f40a16bde1c439e1ff207482da78d6cf7\", \"key_nonce\": \"09683f1586ffcca57d39693dd1c6e6fa\", \"key_tag\": \"8161d0839eb366ca1bf7d29df30fc394\", \"ephemeral_public_key\": \"626d7e2c247fe9f2fd6b83495236f2fb7d23ab71a28e3c95bd10ddd9d75c9df75f8836ec32d8444e5a66b187241d5887269fa9d0008cdd27f7518b5355cd85e4\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "6b4a20f65ee7efcc027ab7dcee5c2368b44dec9d8c805a12ef2af02f3c94522c",
+      "hash": "af5d4d1dc95fdfcff2e1fd79dcdeda9a2410bd2b66347d4f063e33d7b84fc502",
+      "file_id": "a35d91a5-f9e6-4046-913b-005f1539d5f5",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 6,
+      "timestamp": "2026-02-07T21:08:58.330920",
+      "data": "{\"ciphertext\": \"ef131bfdc3ffe8887f7b49adba145051609d7d849f2d8e609e2457be07c257c5\", \"nonce\": \"f402c9cba17b917a540b55e58bd2871f\", \"tag\": \"4645ac275570385bc5cf72ec34860707\", \"encrypted_key\": \"cdeb1d55d778fab5f7fa6fc4d4c96ff6f524b2d90d6508f61f9e6eb1c322c609\", \"key_nonce\": \"c52fc9b5b47a2c4df2c62154c3d24cf2\", \"key_tag\": \"ae1337bdff2919296f79179ab543b2bb\", \"ephemeral_public_key\": \"b3e700e17c1dd239ff6bb8357a5f6d5212ea963c86172a708eaaaddf735c44c0b695900dc6eaf90638e5c5fefe91ed1334c8d330e19e6a9f815c2ddcbab665e4\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "af5d4d1dc95fdfcff2e1fd79dcdeda9a2410bd2b66347d4f063e33d7b84fc502",
+      "hash": "6a4007ac35d7561eb93e8669ced0cbe8e7be4627568e4255dc3f6954c192a1e8",
+      "file_id": "867a8630-d587-4345-8969-0a4e7145160e",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 7,
+      "timestamp": "2026-02-07T21:09:39.945714",
+      "data": "{\"ciphertext\": \"edb53003d03a4485892799ed64b7177d1a0760514e41e33a8f0fc44eae8f3e88\", \"nonce\": \"5be29d0a132443ed0e8232a7f220eff2\", \"tag\": \"5c8a8e987e36c854c2cac5681987b6b9\", \"encrypted_key\": \"8b907edc564b4b0ed4fa0dcf5750f14c06b30749ed88a7276fb85b9683191907\", \"key_nonce\": \"ef7b6fd8f33cb376c6791e95edaee594\", \"key_tag\": \"95c290a3fc66b4d67786bcf64348afcd\", \"ephemeral_public_key\": \"c21384cf387f12af9495d0c1d69b175827ed3b96acadfd69b859d887ec8b6ba2ed44c2c9a7cc3934405b5e5dc3a045ca235bc1d4dde78dd53fb27b2c435d3fed\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "6a4007ac35d7561eb93e8669ced0cbe8e7be4627568e4255dc3f6954c192a1e8",
+      "hash": "357154cc4f5eed987d5f34d9b3f59cccf9bd9447bc06887015933321b5714e72",
+      "file_id": "7b6d7517-bd01-4101-b8e3-f66929e743e1",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 8,
+      "timestamp": "2026-02-07T21:10:40.554979",
+      "data": "{\"ciphertext\": \"7e08c910ea15ced9786aff6ec38d9fc63baa4511c561a5c9a320b6d26a9c656b\", \"nonce\": \"fac3bf35ad5e83d74f3fb458c16bb3e8\", \"tag\": \"7659b6390bb2364cb9b616f3e0d87ca8\", \"encrypted_key\": \"c86f1c86927a34842779a4c927c64e7d98bf1b462a685b7ece3a0511c4d04077\", \"key_nonce\": \"0ec7fd72c7072245c3d4e1c7ea50c17e\", \"key_tag\": \"4d4e0fb83affc2dba20893c440de58d2\", \"ephemeral_public_key\": \"e67e5734f1464a67836816a450ecd3010f5d966b3f227ed27d4bfd6cbad4d2b5c0215a1cb6f7ec042ddcda4bd1ad245eec3d4cb4440b143352c0a81e0eff31b8\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "357154cc4f5eed987d5f34d9b3f59cccf9bd9447bc06887015933321b5714e72",
+      "hash": "007d6ae09937884d4c2bd01392c54fb86560114014b2cc73645b450bece2be84",
+      "file_id": "02cdb773-36fd-4ab9-8137-dc6d5e10111f",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 9,
+      "timestamp": "2026-02-07T21:11:22.499029",
+      "data": "{\"ciphertext\": \"a185b13e03d0bcc1d01c58815d43537d2e966541be321b375f072440b2d774ad\", \"nonce\": \"490886da1878a17466977c6fbffa9cfc\", \"tag\": \"52fca9b9a577f2dd4b0ad67fa126af1d\", \"encrypted_key\": \"aa6832e32329bddaa15194e923facbf60390c7d3da1004073fe7a636d88b4d79\", \"key_nonce\": \"e8fa42b6702cd65d26633a6aa512eb52\", \"key_tag\": \"336ebc301673d9d704db2dc72b16ee16\", \"ephemeral_public_key\": \"238c68fed30d627cd78011efc54d24ee8815e0d412d31c21a778474451c393876d1dd92c284cc997dc135f49b3ebd107d6c1fb5856894b8fd21d992605aaa9be\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "007d6ae09937884d4c2bd01392c54fb86560114014b2cc73645b450bece2be84",
+      "hash": "24a3216a62d892a39464e96c2c244a9b14a6b33c5423260f4f6648d5fd365343",
+      "file_id": "e24d4d97-f885-4eac-a6a9-f42711524883",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 10,
+      "timestamp": "2026-02-07T21:12:47.445311",
+      "data": "{\"ciphertext\": \"796d9f435c1bb55666a0a0f9986645cfb99b2b4e022f603c4f8975078bb17f51\", \"nonce\": \"fdf1b6b029b6452de21d2c4cb868b09d\", \"tag\": \"8eae52c98f70b6c6b1e247ce9c155889\", \"encrypted_key\": \"f2bae557e9fc8867d2a0d07ae750b488c42133365e0b3f92e30a4cc0938eeb16\", \"key_nonce\": \"539a34d87d72b3a9686a407563c9e6ac\", \"key_tag\": \"f3b88283cc05239cfd6869fe87a630b6\", \"ephemeral_public_key\": \"a872e151de6f0037ea94f57d08eed5aced24d573e7b4d26972f6e65c007a120bc247ea01d5e0bf83f26e662158ad949015d2391c3c6c8f36601739f9a763f8e0\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "24a3216a62d892a39464e96c2c244a9b14a6b33c5423260f4f6648d5fd365343",
+      "hash": "da01e75a8ed744719856e52a6ec7d762482717e9e6849f9445ab645de9c4f6f4",
+      "file_id": "a1c6b17b-2314-4b13-9295-bcb5add66297",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 11,
+      "timestamp": "2026-02-07T21:15:24.170998",
+      "data": "{\"ciphertext\": \"ea6c9e9f5c05fc734a71ecab4b10f9c38829a36c783b09725ea634e3520dfde4\", \"nonce\": \"cecfd7488d7ed8e01a18d14a27517f14\", \"tag\": \"1aa1f91d6f259930eba47a2ce8e84096\", \"encrypted_key\": \"caabe07f7c1bcd1d6eabe5fe33e0ec9ed5ecc7f624b03358a325a38b05f2b8ba\", \"key_nonce\": \"5964e5892af00cfeff57a0f9f9ced59b\", \"key_tag\": \"4b17b1b7805c8b925e128c3d8968501a\", \"ephemeral_public_key\": \"54dc8af67e447b69f80b532b6e0784ec419fecd89a2e4dd325304b036fba2ce96f4fb3524675f55f819693d5ac999b2eeb47de5947786c4d3d6b3673873b33df\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "da01e75a8ed744719856e52a6ec7d762482717e9e6849f9445ab645de9c4f6f4",
+      "hash": "95adc597161b7e458002cc56cc413554fa547a5592c8410d63fc0b5e31b1abff",
+      "file_id": "eb71f837-f0e1-45e3-92b9-cfca78409661",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 12,
+      "timestamp": "2026-02-07T21:17:19.107035",
+      "data": "{\"ciphertext\": \"f1a75dfffd16220bf0fd3e0dc057296291c53db1253ed34643483b6909d08af8\", \"nonce\": \"1c93e005440a1699566e16c1afa84f72\", \"tag\": \"42f0ad51b4e4667eb7338184f20bf038\", \"encrypted_key\": \"5b2f98cd5453390533ce3e7c6567f91b889c1338efcb9c49ee98fa059041c657\", \"key_nonce\": \"2ed202ddb675d1d6905e96ee4615441f\", \"key_tag\": \"cea009bcac40fd0935a3d84b9b9f9388\", \"ephemeral_public_key\": \"d16ee9b314d73a8d954cca7b843232fcb5bc9afd1158f754333072832d145e00056ac13640f7693284850f7cb33bc0a296cc1d79035434b24427ff6012c4e69a\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "95adc597161b7e458002cc56cc413554fa547a5592c8410d63fc0b5e31b1abff",
+      "hash": "0148b3636d071562be84338680a662e6d7bea71bad5dba82088998c5dff7dde5",
+      "file_id": "10dd117a-6bed-421e-9478-d363df231170",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 13,
+      "timestamp": "2026-02-07T21:18:47.007692",
+      "data": "{\"ciphertext\": \"9a82eb3dfc8ec3e7bd26c9949b28c5276397d035b2aa1597531cfa9773bcb7cd\", \"nonce\": \"a023ef8a46dd29dc115e0872118b7e3f\", \"tag\": \"ef98894de0e5a42a39ed67244cefb2ba\", \"encrypted_key\": \"3f2917d3b07cce77f65eaeebf3802f75cead3ec07eb59dc50ba88a8615169c3a\", \"key_nonce\": \"2d6d9aa098dab0aa992732b0088df74d\", \"key_tag\": \"ea5176c4eef82d3b9b6c0ce4a21524aa\", \"ephemeral_public_key\": \"df1e189cf587d0a3e6db63708550cf968739cd7f8dcb53181fa7d2e27f9011b28f51cf0586c59ada5cb4594c8084cb3b9526f4bb69323a695428acc27c883015\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "0148b3636d071562be84338680a662e6d7bea71bad5dba82088998c5dff7dde5",
+      "hash": "1fbd77e7f499a1ca11fd8223689332f9360f5275d48a3ddbdccaae90965d49de",
+      "file_id": "45f115f4-849d-4ab7-b3ea-e7f409a72696",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 14,
+      "timestamp": "2026-02-07T22:28:12.122950",
+      "data": "{\"ciphertext\": \"d17c3f7af2d5fdf7c666ec3c31cf53982217c0ed5b7bab50d417f3589f11f39f\", \"nonce\": \"0119a2516012d8ad4e0ae877be567cc8\", \"tag\": \"422bb82172e44557c8edfeea23b55b01\", \"encrypted_key\": \"7219c574b30d6309bce180d86424075f69915be57b46276fc87afb2fe8316ede\", \"key_nonce\": \"9b398f6ab6fb8472c37fbf102c71e79f\", \"key_tag\": \"74df87a215cb626191dfd313e6476b3b\", \"ephemeral_public_key\": \"d356949765121fc5a164edec1050da196e54d1631fe12b5daa62ef544503c24fe20a1487dd160688f1a12fef8bb97c8511f7274f6a23a1414687e46af70f20c0\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "1fbd77e7f499a1ca11fd8223689332f9360f5275d48a3ddbdccaae90965d49de",
+      "hash": "fd31c442a1b50319c589d7783afbf464a8de8f0826b4b1a435e153a711933dbf",
+      "file_id": "e1c041f3-9730-4ec7-86cd-4167831529af",
+      "owner": "alice_e2e"
+    },
+    {
+      "block_id": 15,
+      "timestamp": "2026-02-07T22:43:23.149624",
+      "data": "{\"ciphertext\": \"e58be74a1f97aa395d15b693da2f5df3cbd6c3a2192790b16b7917779e02d3d3\", \"nonce\": \"dc262564f448406050b1d5ca66ce8b7e\", \"tag\": \"b73154584cbca7875b1e33c4d4ca9aff\", \"encrypted_key\": \"e935b40e9ef5b51fd371f012a205fe8cd87c340466318f9d6846c6bf996d8d29\", \"key_nonce\": \"a12c821960081f9c3b9b97dbf12c8d6b\", \"key_tag\": \"81738a53a2ddeed084782f665e33c444\", \"ephemeral_public_key\": \"c0997a5e33ca48783b30db247829950e151763340877911f60cea0b0ab88ab0192b470f02e6f0d3b46b0d4b714a26d32fc850c41349f8e8082c265aee0937939\", \"is_shared\": false, \"owner\": \"alice_e2e\"}",
+      "previous_hash": "fd31c442a1b50319c589d7783afbf464a8de8f0826b4b1a435e153a711933dbf",
+      "hash": "a346e143423044bf93fd9c4d867ff774d4fc6a8827d11e9227b7b3c197b5697a",
+      "file_id": "d3b27f37-a90f-48c0-aef2-259a85ebda62",
+      "owner": "alice_e2e"
+    }
+  ],
+  "branches": {}
+}

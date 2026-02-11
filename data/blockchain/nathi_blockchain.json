@@ -1,0 +1,51 @@
+{
+  "owner": "nathi",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-02-04T11:10:28.101272",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "171ea4a585e251ac09ed26b09caf170321c56ed40c35ba98ce141cd51b7ac9c7",
+      "file_id": "genesis",
+      "owner": "nathi"
+    },
+    {
+      "block_id": 1,
+      "timestamp": "2026-02-04T11:10:53.772196",
+      "data": "{\"ciphertext\": \"378dd37edb20b64993bb652b42c6506f97202005708d471449b5eca9c875234e\", \"nonce\": \"1fafa8d09d675ff6ba005c6c7c119a40\", \"tag\": \"84a734264d8e30537a973b39571bed0c\", \"encrypted_key\": \"c054ce67cad8fd6d67175e38202848bbdf16212d85352e64811045a468578064\", \"key_nonce\": \"d556f8eec7c765073fba5c2e0c26ed39\", \"key_tag\": \"37ab92dbad8f55cf05d7755d8fda4132\", \"ephemeral_public_key\": \"45a6f29f808aa37bbccf35ca400b5ed4e047d0fd099b32333ba4d9314273502faf36ac8d166063b7f82757b86b0e27ffbbb7d67fdff29f01b1dc7516f433a811\", \"is_shared\": false, \"owner\": \"nathi\"}",
+      "previous_hash": "171ea4a585e251ac09ed26b09caf170321c56ed40c35ba98ce141cd51b7ac9c7",
+      "hash": "347c1ab234e12efad5adeb9cdef8de238bc2bce35c1422d24c9239da627b21ee",
+      "file_id": "9269ea89-839e-4c20-9352-7bdb7dbd9890",
+      "owner": "nathi"
+    },
+    {
+      "block_id": 2,
+      "timestamp": "2026-02-04T11:11:29.170878",
+      "data": "{\"ciphertext\": \"2f7f8d180991db049dca81bd232d7fc0b54dbe5439ba788e88a84de36b5b76d9\", \"nonce\": \"c1267b1af6d680e5a913281519fe1063\", \"tag\": \"e7743a5f3ff985bfa9cdadd733f4b0aa\", \"encrypted_key\": \"13370f0f8db437e509f8a2d327e72f6f4ceb19e7ee2a6ffbb615d06a6569a8f0\", \"key_nonce\": \"a322938b7f125fd653c88fc2e60a3193\", \"key_tag\": \"66a454d8e223fa9a915a7c2443c8a3de\", \"ephemeral_public_key\": \"6d92523f1e62d88d4480b6cc4338284ebe3f998d55a5f59485602c21bcfb49bad0db14ba47c8354a03ca386b63ac793627a69b8e93a796f405cff8eb8fb121a4\", \"is_shared\": true, \"shared_from\": \"Nithi\", \"original_file_id\": \"fae4fd6e-2207-41bd-a612-cd650b1a2107\", \"owner\": \"nathi\"}",
+      "previous_hash": "347c1ab234e12efad5adeb9cdef8de238bc2bce35c1422d24c9239da627b21ee",
+      "hash": "a36254ed8a51c19ecf5343da5fe746951f91f5fe1caba8baffb4076240a49802",
+      "file_id": "fae4fd6e-2207-41bd-a612-cd650b1a2107",
+      "owner": "nathi"
+    },
+    {
+      "block_id": 3,
+      "timestamp": "2026-02-04T14:24:48.591506",
+      "data": "{\"ciphertext\": \"4600463f5b0550101ae477b63efb1ebeb78db56d9a4a39aca585974c5e7358ab\", \"nonce\": \"f4788845436245e5a38ae7b2da05de96\", \"tag\": \"2ce89b682ea2f3eb0f9790e92168b3b7\", \"encrypted_key\": \"e92e0e01c00df8ba0c083cb4db61addabdd2e5bd3303b562e475dfadc783b33c\", \"key_nonce\": \"0189b6cdd03918c43168065f772e75ac\", \"key_tag\": \"6623481f441a3707340cb7440874b352\", \"ephemeral_public_key\": \"0ecc7c68127f3c56f2580d2858f8364058c00113b0e6a8f8b36da0ca53becfdcd2c441c784762574290e6a69608bb555878e86702e5aab25dba9df78bac55721\", \"is_shared\": false, \"owner\": \"nathi\"}",
+      "previous_hash": "a36254ed8a51c19ecf5343da5fe746951f91f5fe1caba8baffb4076240a49802",
+      "hash": "f0f9a4baa0675b215e1cac12edeb77e33bba866caf9dcc7ed2c7d348c3b48ea3",
+      "file_id": "69bef57c-6dc3-4939-b88b-45d75d9a4901",
+      "owner": "nathi"
+    },
+    {
+      "block_id": 4,
+      "timestamp": "2026-02-04T14:25:11.782249",
+      "data": "{\"ciphertext\": \"344d3865636ce8df2d74b480dfd8b990a6a35d95cd090afe3c843407ba65ba54\", \"nonce\": \"0299f6cdab0b072581157af9714a183b\", \"tag\": \"aa5fd51af893f41f6afedf0e74e4cdd0\", \"encrypted_key\": \"da6183e9a42a57877ac19bcb1e0917a3bcd56e94a02409ed9c9986f234536172\", \"key_nonce\": \"369cb4ec86553a52ba662e54b711a9e0\", \"key_tag\": \"90e9a2c9c9f749b3097b0a2dc7f983f5\", \"ephemeral_public_key\": \"cc15f798af757226f89d9b5c0f14d2686e96801e62e8bd4c21e5427c3ce0b61cabc61004cb1a708e3ad6c834a2ce9ebad6eeccd27d36e5b3673c23b84156456b\", \"is_shared\": true, \"shared_from\": \"Nithi\", \"original_file_id\": \"cf9b0d62-b867-4875-843c-695d77c0ff48\", \"owner\": \"nathi\"}",
+      "previous_hash": "f0f9a4baa0675b215e1cac12edeb77e33bba866caf9dcc7ed2c7d348c3b48ea3",
+      "hash": "096f5098d9099d35c66f602a87cf2bb43afaf6c60ca490cf982bf5f48cbb68ee",
+      "file_id": "cf9b0d62-b867-4875-843c-695d77c0ff48",
+      "owner": "nathi"
+    }
+  ],
+  "branches": {}
+}

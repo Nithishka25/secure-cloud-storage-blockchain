@@ -1,0 +1,15 @@
+{
+  "owner": "bob_e2e",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-02-07T20:40:35.382223",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "f399dd3b3cbe41d987a5920d24afdcb26482deba9f391da4f6dcc46571b7dd67",
+      "file_id": "genesis",
+      "owner": "bob_e2e"
+    }
+  ],
+  "branches": {}
+}

@@ -1,0 +1,42 @@
+{
+  "owner": "123",
+  "chain": [
+    {
+      "block_id": 0,
+      "timestamp": "2026-01-30T20:44:37.391485",
+      "data": "Genesis Block - Blockchain Encryption System",
+      "previous_hash": "0",
+      "hash": "2a8617e0bf15fc0daadc870a7830eaf64c44a70725824f4b244d901689702622",
+      "file_id": "genesis",
+      "owner": "123"
+    },
+    {
+      "block_id": 1,
+      "timestamp": "2026-01-30T20:45:24.525895",
+      "data": "{\"ciphertext\": \"c280c93d6ffaf2efd198bbb00b0fea3b056780e982cf7ea86cd5f43607c2c361\", \"nonce\": \"b3f7cdec50f05bd1c13b9178c4868da4\", \"tag\": \"ae74c2e95256323bdc84a82b13eab776\", \"encrypted_key\": \"c32529fa455ab7502355888fddf295234f34af24ca0f6926351e62a7331cc4a6\", \"key_nonce\": \"0c84379e9945288925f80c7b51d1ba1d\", \"key_tag\": \"b6acb3bb02f9c994c39e36004347512a\", \"ephemeral_public_key\": \"a3533162bfae0dc783472303957c0c3246da543c279d6bd39035923bf302c4f42178546d790fa4f7470542fb86dd72e077ce8a1389a78b9cf8d9b22cfbb2e1eb\"}",
+      "previous_hash": "2a8617e0bf15fc0daadc870a7830eaf64c44a70725824f4b244d901689702622",
+      "hash": "844cf9febeae5a2f5803d65151aca278e1e0cc3c3d57574c69263e9a33399581",
+      "file_id": "aa204f01-d2d5-4cd4-b466-8f8fa9230a12",
+      "owner": "123"
+    },
+    {
+      "block_id": 2,
+      "timestamp": "2026-01-31T09:55:04.430026",
+      "data": "{\"ciphertext\": \"1c3f54b6914126d2d780b52cfc463553cf04a121b63fc7f18caab0597fa8e53a\", \"nonce\": \"e52358af41f66d94a2af640f5ca114df\", \"tag\": \"33e2d9d2b0514f9b5b808ae3cb4c46e9\", \"encrypted_key\": \"9280f2cbf6d22bcfd187227d1a9b2ba2b34bfd59479d505278b003449c16e111\", \"key_nonce\": \"925bba48e4cb9cc5b8786615990bdaa9\", \"key_tag\": \"10f286916b10d02a4249b8d78467c1d8\", \"ephemeral_public_key\": \"8280cfdfb9726e4ccdb89686dbcaebb012acf251b604c5906da97a6f621471d0e92671b5d05350c9da67ff33635c2d3bb6a959ad9db82cada6929ab8b3d89cb9\", \"is_shared\": false, \"owner\": \"123\"}",
+      "previous_hash": "844cf9febeae5a2f5803d65151aca278e1e0cc3c3d57574c69263e9a33399581",
+      "hash": "55e4344fd57d0a9c99e2cc10658e4e2497639f967e2c5181fc929a9282904bef",
+      "file_id": "7663eeff-f64d-42a0-b768-7e7efb62d5a9",
+      "owner": "123"
+    },
+    {
+      "block_id": 3,
+      "timestamp": "2026-01-31T10:27:44.318913",
+      "data": "{\"ciphertext\": \"b65964d27a94148930a5f316acb4a4e0b6ea7570d2730d4903808bc8023f78d9\", \"nonce\": \"ec8a05c58cffef89becbdff3c8f443d5\", \"tag\": \"de6046145de636e6be3aae7f834b6d87\", \"encrypted_key\": \"ec39e79a9658aae6b70be8a6b7e65fa8936ff094198f8f559f0c7e8c4b652731\", \"key_nonce\": \"543ddd51b1491ad271ece5539956f29f\", \"key_tag\": \"51dcacf19095b9687eb73e11c030d971\", \"ephemeral_public_key\": \"39857f063aeff928a4ab885cdaf59dc4db6a0052c0dfc744c09e4d604da2221fce5778be80800a2f18ab4ee8935b9616ad6b0576795b286278bd739ad4f8237c\", \"is_shared\": false, \"owner\": \"123\"}",
+      "previous_hash": "55e4344fd57d0a9c99e2cc10658e4e2497639f967e2c5181fc929a9282904bef",
+      "hash": "d1510265e95febf98e9fe46051c82e79bf2b244c7a3382cfc947d10db5822d35",
+      "file_id": "0a09fafe-277e-42cc-a1dd-29888c26a02a",
+      "owner": "123"
+    }
+  ],
+  "branches": {}
+}
