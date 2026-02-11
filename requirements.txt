@@ -2,6 +2,7 @@
 # Implementation of "Dynamic AES Encryption and Blockchain Key Management"
 
 flask>=2.2.0
+flask-cors>=4.0.0
 gunicorn>=21.2.0
 
 # Core cryptography
@@ -10,7 +11,6 @@ ecdsa>=0.18.0           # ECC (secp256k1) encryption
 
 # Blockchain (Ethereum/Ganache integration)
 web3>=6.11.0            # Web3 for Ganache connection
-flask-cors>=4.0.0
 
 # Standard libraries (included with Python, listed for reference)
 # hashlib    - SHA-256 hashing
