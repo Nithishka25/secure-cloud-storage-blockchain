@@ -1,0 +1,9 @@
+# Requirements for Web UI
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Also need existing requirements
+pycryptodome>=3.19.0
+ecdsa>=0.18.0
+web3>=6.11.0
+py-solc-x>=2.0.0  # For Ganache smart contracts

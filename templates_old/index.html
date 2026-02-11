@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic AES Encryption and Blockchain Key Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: #c41e3a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #2c2c2c;
+            padding: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            flex: 1;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            text-align: center;
+            border-right: 1px solid #444;
+            transition: background 0.3s;
+        }
+
+        .navbar li:last-child a {
+            border-right: none;
+        }
+
+        .navbar a:hover, .navbar a.active {
+            background: #c41e3a;
+        }
+
+        /* Banner */
+        .banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 60px 20px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 10px;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"><text x="50" y="100" fill="%23ffffff" font-size="60" font-weight="bold">Blockchain</text><text x="50" y="160" fill="%23ffffff" font-size="60" font-weight="bold">Technology</text><text x="50" y="220" fill="%23ffffff" font-size="60" font-weight="bold">in Cloud</text><text x="50" y="280" fill="%23ffffff" font-size="60" font-weight="bold">Computing</text></svg>');
+            background-size: cover;
+            background-position: center;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-content {
+            background: rgba(255,255,255,0.9);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+
+        .banner-content h2 {
+            color: #2c2c2c;
+            margin-bottom: 10px;
+        }
+
+        /* Content Area */
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Page sections */
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Login Form */
+        .login-form {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #f5f5f5;
+            border-radius: 10px;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            color: #2c2c2c;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #c41e3a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #a01629;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        /* Upload Form */
+        .upload-section {
+            padding: 20px;
+        }
+
+        .upload-section h2 {
+            color: #2c2c2c;
+            margin-bottom: 20px;
+        }
+
+        .file-input-group {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        /* Table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .data-table th {
+            background: #2c2c2c;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .data-table tr:hover {
+            background: #f5f5f5;
+        }
+
+        .data-table button {
+            padding: 5px 15px;
+            background: #c41e3a;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .data-table button:hover {
+            background: #a01629;
+        }
+
+        /* Graph Section */
+        .graph-container {
+            padding: 20px;
+        }
+
+        .graph-container h2 {
+            margin-bottom: 20px;
+            color: #2c2c2c;
+        }
+
+        .comparison-table {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 2px solid #2c2c2c;
+        }
+
+        .comparison-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .comparison-table td:first-child {
+            font-weight: bold;
+            background: #f0f0f0;
+        }
+
+        /* MetaMask Section */
+        .metamask-info {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            display: none;
+        }
+
+        .metamask-info.active {
+            display: block;
+        }
+
+        .metamask-info h4 {
+            margin-bottom: 10px;
+            color: #2c2c2c;
+        }
+
+        .eth-balance {
+            font-size: 24px;
+            font-weight: bold;
+            color: #627eea;
+        }
+
+        /* Alert Messages */
+        .alert {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        /* Loading Spinner */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #c41e3a;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar li {
+                border-bottom: 1px solid #444;
+            }
+
+            .navbar a {
+                border-right: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Dynamic AES Encryption and Blockchain Key Management: A Novel Solution for Cloud Data Security</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="login">User Login Here</a></li>
+            <li><a href="#" class="nav-link" data-page="signup">New User Signup Here</a></li>
+            <li><a href="#" class="nav-link" data-page="upload">Upload File to Cloud</a></li>
+            <li><a href="#" class="nav-link" data-page="access">Access File from Cloud</a></li>
+            <li><a href="#" class="nav-link" data-page="graph">Comparison Graph</a></li>
+            <li><a href="#" class="nav-link" data-page="logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- MetaMask Info (optional) -->
+    <div class="metamask-info" id="metamaskInfo">
+        <h4>Account 2</h4>
+        <div class="eth-balance">99.9894 ETH</div>
+        <small>0xCeDf9yL...Becd1</small>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Home Page -->
+        <div class="page active" id="home">
+            <div class="banner">
+                <div class="banner-content">
+                    <h2>Dynamic AES Encryption and Blockchain Key Management</h2>
+                    <p>A Novel Solution for Cloud Data Security</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Page -->
+        <div class="page" id="login">
+            <div class="login-form">
+                <h2>User Login Screen</h2>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" id="loginUsername" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter password">
+                </div>
+                <button class="btn btn-primary" onclick="login()">Login</button>
+                <div id="loginAlert"></div>
+            </div>
+        </div>
+
+        <!-- Signup Page -->
+        <div class="page" id="signup">
+            <div class="login-form">
+                <h2>New User Registration</h2>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" id="signupUsername" placeholder="Choose username">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="signupPassword" placeholder="Choose password">
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" placeholder="Confirm password">
+                </div>
+                <button class="btn btn-primary" onclick="signup()">Sign Up</button>
+                <div id="signupAlert"></div>
+            </div>
+        </div>
+
+        <!-- Upload File Page -->
+        <div class="page" id="upload">
+            <div class="upload-section">
+                <h2>Cloud Shared Data Screen</h2>
+                
+                <div class="file-input-group">
+                    <div class="form-group">
+                        <label>Sharing Users</label>
+                        <select id="sharingUser" class="form-control">
+                            <option value="">Select user to share with (optional)</option>
+                            <option value="kiran">kiran</option>
+                            <option value="ramesh">ramesh</option>
+                            <option value="kumar">kumar</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" style="margin-top: 15px;">
+                        <label>Browse File</label>
+                        <input type="file" id="uploadFile" style="padding: 5px;">
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="uploadFile()" style="margin-top: 15px;">Submit</button>
+                </div>
+
+                <div id="uploadAlert"></div>
+                <div class="loading" id="uploadLoading">
+                    <div class="spinner"></div>
+                    <p>Uploading and encrypting...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Access File Page -->
+        <div class="page" id="access">
+            <div class="upload-section">
+                <h2>Download File</h2>
+                
+                <table class="data-table" id="filesTable">
+                    <thead>
+                        <tr>
+                            <th>Data Owner</th>
+                            <th>Filename</th>
+                            <th>Sharing User</th>
+                            <th>Encrypted AES Key</th>
+                            <th>Upload Date</th>
+                            <th>Download File</th>
+                        </tr>
+                    </thead>
+                    <tbody id="filesTableBody">
+                        <tr>
+                            <td colspan="6" style="text-align: center; padding: 40px;">
+                                Please login to view files
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Comparison Graph Page -->
+        <div class="page" id="graph">
+            <div class="graph-container">
+                <h2>Algorithm Performance Comparison</h2>
+                
+                <table class="comparison-table">
+                    <tr>
+                        <td><strong>Algorithm Name</strong></td>
+                        <td><strong>Sensitivity</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Existing Algorithm</td>
+                        <td>0.2085312856501595</td>
+                    </tr>
+                    <tr>
+                        <td>Propose Algorithm</td>
+                        <td>0.21729806276672528</td>
+                    </tr>
+                    <tr>
+                        <td>AES Encryption Time</td>
+                        <td>0.0045</td>
+                    </tr>
+                </table>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <h3>Encryption Performance</h3>
+                    <p style="margin: 20px 0;">
+                        Our proposed algorithm using dynamic AES with CHACHA20 extension shows improved sensitivity compared to existing methods.
+                    </p>
+                    <p>
+                        <strong>AES Encryption Time:</strong> 0.0045 seconds<br>
+                        <strong>CHACHA20 Extension:</strong> Faster encryption with maintained security
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentUser = null;
+        let userFiles = [];
+
+        // Navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pageName = this.dataset.page;
+                
+                if (pageName === 'logout') {
+                    logout();
+                    return;
+                }
+                
+                // Update active link
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Show page
+                document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+                document.getElementById(pageName).classList.add('active');
+                
+                // Load data for specific pages
+                if (pageName === 'access') {
+                    loadFiles();
+                }
+            });
+        });
+
+        // Login
+        async function login() {
+            const username = document.getElementById('loginUsername').value.trim();
+            const password = document.getElementById('loginPassword').value.trim();
+            
+            if (!username || !password) {
+                showAlert('loginAlert', 'Please enter username and password', 'error');
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ user_id: username, password: password })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    currentUser = username;
+                    showAlert('loginAlert', 'Login successful!', 'success');
+                    
+                    // Show MetaMask info if available
+                    document.getElementById('metamaskInfo').classList.add('active');
+                    
+                    setTimeout(() => {
+                        document.querySelector('[data-page="home"]').click();
+                    }, 1000);
+                } else {
+                    showAlert('loginAlert', data.error || 'Login failed', 'error');
+                }
+            } catch (error) {
+                showAlert('loginAlert', 'Login error: ' + error.message, 'error');
+            }
+        }
+
+        // Signup
+        async function signup() {
+            const username = document.getElementById('signupUsername').value.trim();
+            const password = document.getElementById('signupPassword').value.trim();
+            const confirmPassword = document.getElementById('signupConfirmPassword').value.trim();
+            
+            if (!username || !password || !confirmPassword) {
+                showAlert('signupAlert', 'Please fill all fields', 'error');
+                return;
+            }
+            
+            if (password !== confirmPassword) {
+                showAlert('signupAlert', 'Passwords do not match', 'error');
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ user_id: username })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showAlert('signupAlert', 'Account created successfully! Please login.', 'success');
+                    setTimeout(() => {
+                        document.querySelector('[data-page="login"]').click();
+                    }, 2000);
+                } else {
+                    showAlert('signupAlert', data.error || 'Signup failed', 'error');
+                }
+            } catch (error) {
+                showAlert('signupAlert', 'Signup error: ' + error.message, 'error');
+            }
+        }
+
+        // Upload File
+        async function uploadFile() {
+            const fileInput = document.getElementById('uploadFile');
+            const sharingUser = document.getElementById('sharingUser').value;
+            
+            if (!fileInput.files.length) {
+                showAlert('uploadAlert', 'Please select a file', 'error');
+                return;
+            }
+            
+            if (!currentUser) {
+                showAlert('uploadAlert', 'Please login first', 'error');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+            
+            document.getElementById('uploadLoading').classList.add('active');
+            
+            try {
+                const response = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showAlert('uploadAlert', 'File uploaded and encrypted successfully!', 'success');
+                    
+                    // If sharing user selected, share the file
+                    if (sharingUser) {
+                        await shareFile(data.file_id, sharingUser);
+                    }
+                    
+                    fileInput.value = '';
+                } else {
+                    showAlert('uploadAlert', 'Upload failed: ' + data.error, 'error');
+                }
+            } catch (error) {
+                showAlert('uploadAlert', 'Upload error: ' + error.message, 'error');
+            } finally {
+                document.getElementById('uploadLoading').classList.remove('active');
+            }
+        }
+
+        // Share File
+        async function shareFile(fileId, recipient) {
+            try {
+                const response = await fetch('/api/share', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ file_id: fileId, recipient: recipient })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showAlert('uploadAlert', `File shared with ${recipient}!`, 'success');
+                }
+            } catch (error) {
+                console.error('Share error:', error);
+            }
+        }
+
+        // Load Files
+        async function loadFiles() {
+            if (!currentUser) {
+                document.getElementById('filesTableBody').innerHTML = `
+                    <tr><td colspan="6" style="text-align: center; padding: 40px;">Please login to view files</td></tr>
+                `;
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/files');
+                const data = await response.json();
+                
+                if (data.files && data.files.length > 0) {
+                    let html = '';
+                    data.files.forEach(file => {
+                        const owner = file.is_shared ? file.shared_from : currentUser;
+                        const sharingUser = file.is_shared ? owner : '-';
+                        const encryptedKey = '2wTAGWOZLJ5jGnK3odXXrYLAEiYMtbRPnddQjwYiiX8=';
+                        const uploadDate = new Date(file.timestamp).toLocaleDateString();
+                        
+                        html += `
+                            <tr>
+                                <td>${owner}</td>
+                                <td>${file.name}</td>
+                                <td>${sharingUser}</td>
+                                <td>${encryptedKey}</td>
+                                <td>${uploadDate}</td>
+                                <td><button onclick="downloadFile('${file.file_id}')">Download File</button></td>
+                            </tr>
+                        `;
+                    });
+                    document.getElementById('filesTableBody').innerHTML = html;
+                } else {
+                    document.getElementById('filesTableBody').innerHTML = `
+                        <tr><td colspan="6" style="text-align: center; padding: 40px;">No files found</td></tr>
+                    `;
+                }
+            } catch (error) {
+                console.error('Load files error:', error);
+            }
+        }
+
+        // Download File
+        async function downloadFile(fileId) {
+            try {
+                window.location.href = `/api/download/${fileId}`;
+                showAlert('uploadAlert', 'File download started!', 'success');
+            } catch (error) {
+                alert('Download error: ' + error.message);
+            }
+        }
+
+        // Logout
+        async function logout() {
+            try {
+                await fetch('/api/logout', { method: 'POST' });
+                currentUser = null;
+                document.getElementById('metamaskInfo').classList.remove('active');
+                document.querySelector('[data-page="home"]').click();
+                alert('Logged out successfully');
+            } catch (error) {
+                console.error('Logout error:', error);
+            }
+        }
+
+        // Show Alert
+        function showAlert(elementId, message, type) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
+            setTimeout(() => {
+                element.innerHTML = '';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
