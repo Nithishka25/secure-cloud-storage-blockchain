@@ -21,6 +21,7 @@ import json
 from pathlib import Path
 import secrets
 import os
+import config
 
 # Ensure upload directory exists (important for cloud)
 config.FILES_DIR.mkdir(parents=True, exist_ok=True)
