@@ -22,6 +22,9 @@ from pathlib import Path
 import secrets
 import os
 
+# Ensure upload directory exists (important for cloud)
+config.FILES_DIR.mkdir(parents=True, exist_ok=True)
+
 # Import our blockchain system
 # from step12_integrated_ganache import SecureCloudStorageWithGanache
 import config
