@@ -52,17 +52,15 @@ def create_user_storage(user_id):
 
 
 def get_user_storage():
-    """Get storage instance for current user"""
-    if 'user_id' not in session:
+    user_id = session.get("user_id")
+    if not user_id:
         return None
-    
-    user_id = session['user_id']
-    
-    # Create or get existing storage
+
     if user_id not in user_sessions:
         user_sessions[user_id] = create_user_storage(user_id)
-    
+
     return user_sessions[user_id]
+
 
 
 @app.route('/')
