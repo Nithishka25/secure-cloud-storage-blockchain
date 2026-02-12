@@ -41,6 +41,14 @@ def get_ganache_storage():
         print("⚠️ Ganache not available in cloud environment:", e)
         return None
 
+def create_user_storage(user_id):
+    try:
+        from step12_integrated_ganache import SecureCloudStorageWithGanache
+        return SecureCloudStorageWithGanache(user_id, use_ganache=True)
+    except Exception as e:
+        print("⚠️ Ganache not available, falling back:", e)
+        return None
+
 
 def get_user_storage():
     """Get storage instance for current user"""
@@ -51,7 +59,7 @@ def get_user_storage():
     
     # Create or get existing storage
     if user_id not in user_sessions:
-        user_sessions[user_id] = SecureCloudStorageWithGanache(user_id, use_ganache=True)
+        user_sessions[user_id] = create_user_storage(user_id)
     
     return user_sessions[user_id]
 
@@ -74,8 +82,9 @@ def login():
     session['user_id'] = user_id
     
     # Initialize storage
-    storage = SecureCloudStorageWithGanache(user_id, use_ganache=True)
+    storage = create_user_storage(user_id)
     user_sessions[user_id] = storage
+
     
     # Get status
     ganache_status = storage.get_ganache_status()
