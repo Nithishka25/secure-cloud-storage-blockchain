@@ -113,11 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
 // Check if user is logged in
 async function checkLoginStatus() {
   try {
-    const url = currentUserId
-      ? `/api/status?user_id=${encodeURIComponent(currentUserId)}`
-      : "/api/status";
-    const response = await fetch(url, {
-      credentials: "include", // Send cookies for CORS
+    const response = await fetch("/api/status", {
+      credentials: "include", // Send session cookie
     });
     if (response.ok) {
       const data = await response.json();
@@ -129,6 +126,7 @@ async function checkLoginStatus() {
     console.error("Status check failed:", error);
   }
 }
+
 
 // Login
 async function login() {
@@ -286,12 +284,10 @@ async function uploadFile(file) {
 // Load files
 async function loadFiles() {
   try {
-    const response = await fetch(
-      `/api/files?user_id=${encodeURIComponent(currentUserId)}`,
-      {
-        credentials: "include", // Send cookies for CORS
-      },
-    );
+    const response = await fetch("/api/files", {
+         credentials: "include",
+    });
+
     const data = await response.json();
 
     if (data.files) {
