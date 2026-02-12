@@ -27,7 +27,8 @@ import os
 import config
 
 app = Flask(__name__)
-app.secret_key = secrets.token_hex(16)
+app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-key-change-later")
+#app.secret_key = secrets.token_hex(16)
 CORS(app)
 
 # Store active user sessions
@@ -70,32 +71,28 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/api/login', methods=['POST'])
+@app.route("/api/login", methods=["POST"])
 def login():
-    """Login user"""
-    data = request.json
-    user_id = data.get('user_id', '').strip()
-    
-    if not user_id:
-        return jsonify({'error': 'User ID required'}), 400
-    
-    session['user_id'] = user_id
-    
-    # Initialize storage
-    storage = create_user_storage(user_id)
-    user_sessions[user_id] = storage
+    data = request.get_json()
+    user_id = data.get("user_id")
+    password = data.get("password")
 
-    
-    # Get status
-    ganache_status = storage.get_ganache_status()
-    
+    if not user_id:
+        return jsonify({"success": False, "message": "User ID required"}), 400
+
+    # Create session
+    session["user_id"] = user_id
+
+    # Initialize user storage lazily
+    if user_id not in user_sessions:
+        user_sessions[user_id] = create_user_storage(user_id)
+
     return jsonify({
-        'success': True,
-        'user_id': user_id,
-        'blocks': len(storage.blockchain),
-        'ganache_connected': ganache_status['connected'],
-        'ganache_status': ganache_status
+        "success": True,
+        "user_id": user_id,
+        "message": "Login successful"
     })
+
 
 
 @app.route('/api/logout', methods=['POST'])
@@ -110,24 +107,18 @@ def logout():
     return jsonify({'success': True})
 
 
-@app.route('/api/status', methods=['GET'])
+@app.route("/api/status")
 def get_status():
-    """Get current user status"""
-    storage = get_user_storage()
-    if not storage:
-        return jsonify({'logged_in': False}), 401
-    
-    ganache_status = storage.get_ganache_status()
-    files = storage.list_files()
-    
+    user_id = session.get("user_id")
+
+    if not user_id:
+        return jsonify({"logged_in": False})
+
     return jsonify({
-        'logged_in': True,
-        'user_id': session['user_id'],
-        'blocks': len(storage.blockchain),
-        'files': len(files),
-        'ganache_connected': ganache_status['connected'],
-        'ganache_status': ganache_status
+        "logged_in": True,
+        "user_id": user_id
     })
+
 
 
 @app.route('/api/upload', methods=['POST'])
