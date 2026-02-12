@@ -23,7 +23,7 @@ import secrets
 import os
 
 # Import our blockchain system
-from step12_integrated_ganache import SecureCloudStorageWithGanache
+# from step12_integrated_ganache import SecureCloudStorageWithGanache
 import config
 
 app = Flask(__name__)
@@ -32,6 +32,14 @@ CORS(app)
 
 # Store active user sessions
 user_sessions = {}
+
+def get_ganache_storage():
+    try:
+        from step12_integrated_ganache import SecureCloudStorageWithGanache
+        return SecureCloudStorageWithGanache()
+    except Exception as e:
+        print("⚠️ Ganache not available in cloud environment:", e)
+        return None
 
 
 def get_user_storage():
