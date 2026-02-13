@@ -28,16 +28,19 @@ function waitForTweetsodium() {
 }
 
 const DeviceCrypto = {
-  // Get or generate device keypair
+  // Get or generate device keypair (OPTIONAL FEATURE)
   async getOrGenerateKeyPair() {
-    // Ensure tweetsodium is available
     await waitForTweetsodium();
 
+    // If tweetsodium is blocked, DO NOT crash the app
     if (typeof tweetsodium === "undefined") {
-      console.error("tweetsodium library not loaded");
-      throw new Error("Cryptography library not available");
+      console.warn(
+        "tweetsodium not available, falling back to server-side cryptography",
+      );
+      return null; // graceful fallback
     }
 
+    // Try loading from localStorage
     const stored = localStorage.getItem("device_keypair");
     if (stored) {
       const { pk, sk } = JSON.parse(stored);
@@ -46,11 +49,14 @@ const DeviceCrypto = {
         secretKey: new Uint8Array(sk),
       };
     }
+
     // Generate new keypair
-    const { publicKey, secretKey } = tweetsodium.crypto_sign_seed_keypair(
-      tweetsodium.randombytes(32),
-    );
-    // Store in localStorage
+    const { publicKey, secretKey } =
+      tweetsodium.crypto_sign_seed_keypair(
+        tweetsodium.randombytes(32),
+      );
+
+    // Store safely
     localStorage.setItem(
       "device_keypair",
       JSON.stringify({
@@ -58,51 +64,53 @@ const DeviceCrypto = {
         sk: Array.from(secretKey),
       }),
     );
+
     return { publicKey, secretKey };
   },
 
-  // Sign a message
+  // OPTIONAL signing (guarded)
   sign(message, secretKey) {
-    if (typeof tweetsodium === "undefined") {
-      throw new Error("tweetsodium not available");
+    if (typeof tweetsodium === "undefined" || !secretKey) {
+      return null;
     }
     const msgBytes = new TextEncoder().encode(message);
     return tweetsodium.crypto_sign(msgBytes, secretKey);
   },
 
-  // Verify a signature (server-side)
+  // OPTIONAL verify
   verify(signedMsg, publicKey) {
     try {
-      if (typeof tweetsodium === "undefined") {
+      if (typeof tweetsodium === "undefined" || !publicKey) {
         return null;
       }
       return tweetsodium.crypto_sign_open(signedMsg, publicKey);
-    } catch (e) {
+    } catch {
       return null;
     }
   },
 
-  // Get public key as hex string
   publicKeyHex(publicKey) {
+    if (!publicKey) return null;
     return Array.from(publicKey)
       .map((b) => b.toString(16).padStart(2, "0"))
       .join("");
   },
 
-  // Get public key as base64 for transmission
   publicKeyB64(publicKey) {
+    if (!publicKey) return null;
     return btoa(String.fromCharCode(...publicKey));
   },
 };
 
+
 // Initialize device keypair
-(async () => {
-  deviceKeyPair = await DeviceCrypto.getOrGenerateKeyPair();
-  console.log(
-    "Device public key:",
-    DeviceCrypto.publicKeyHex(deviceKeyPair.publicKey),
-  );
-})();
+// (async () => {
+//   deviceKeyPair = await DeviceCrypto.getOrGenerateKeyPair();
+//   console.log(
+//     "Device public key:",
+//     DeviceCrypto.publicKeyHex(deviceKeyPair.publicKey),
+//   );
+// })();
 
 // Initialize on page load
 document.addEventListener("DOMContentLoaded", () => {
@@ -179,17 +187,36 @@ async function logout() {
 }
 
 // Show main app
-function showMainApp(data) {
+async function showMainApp(data) {
+  // Switch UI
   document.getElementById("loginScreen").classList.remove("active");
   document.getElementById("mainApp").classList.add("active");
   document.getElementById("currentUser").textContent = data.user_id;
 
-  // Store current user ID for API calls
+  // Store current user ID (UI only, NOT for auth)
   currentUserId = data.user_id;
 
+  // ✅ Initialize OPTIONAL device crypto AFTER login
+  deviceKeyPair = await DeviceCrypto.getOrGenerateKeyPair();
+
+  if (deviceKeyPair) {
+    console.log(
+      "Device public key:",
+      DeviceCrypto.publicKeyHex(deviceKeyPair.publicKey),
+    );
+  } else {
+    console.warn(
+      "Client-side crypto unavailable, using secure server-side cryptography only",
+    );
+  }
+
+  // Update UI status
   updateStatus(data);
-  loadFiles();
+
+  // ✅ Load files ONLY after login + session established
+  await loadFiles();
 }
+
 
 // Update status badges
 function updateStatus(data) {
