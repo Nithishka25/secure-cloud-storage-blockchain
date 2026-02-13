@@ -31,6 +31,10 @@ config.FILES_DIR.mkdir(parents=True, exist_ok=True)
 import config
 
 app = Flask(__name__)
+# 🔐 Session configuration for cloud (REQUIRED)
+app.config["SESSION_COOKIE_SAMESITE"] = "None"
+app.config["SESSION_COOKIE_SECURE"] = True
+
 app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-key-change-later")
 #app.secret_key = secrets.token_hex(16)
 CORS(app)
